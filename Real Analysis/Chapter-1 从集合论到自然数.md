@@ -530,7 +530,7 @@ $$
 
 在我们直观的自然数系中，除了加法和乘法，还有大小的概念，即**序关系**，定义如下：
 
-**定义 1.2.7** 序（order）
+**定义 1.2.8** 序（order）
 
 设 $m,n \in \mathbb{N}$，称 $m$ **小于或等于** $n$，如果存在 $k \in \mathbb{N}$ 使得 $m+k=n$，记作 $m \leq n$. 此时也称 $n$ **大于或等于** $m$，记作 $n \geq m$.
 
@@ -538,7 +538,7 @@ $$
 
 $\mathbb{N}$ 上的序关系有如下性质：
 
-**定理 1.2.8**
+**定理 1.2.9**
 
 设 $k,m,n \in \mathbb{N}$，则有：
 
@@ -554,7 +554,7 @@ $\mathbb{N}$ 上的序关系有如下性质：
 
 接下来我们证明 $\mathbb{N}$ 最重要的性质之一：良序原理。
 
-**定理 1.2.9** 良序原理（Well-ordering Principle）
+**定理 1.2.10** 良序原理（Well-ordering Principle）
 
 设 $L \subset \mathbb{N}$ 且 $L\neq \varnothing$，则 $L$ 有最小元。
 
@@ -566,7 +566,7 @@ $\mathbb{N}$ 上的序关系有如下性质：
 
 由良序原理我们可以导出以下定理：
 
-**定理 1.2.10** 强归纳法（Strong Induction）
+**定理 1.2.11** 强归纳法（Strong Induction）
 
 设 $S \subset \mathbb{N}$，$0\in S$ 且 $\forall k<n(k \in S)\implies n \in S$，则 $S=\mathbb{N}$.
 
