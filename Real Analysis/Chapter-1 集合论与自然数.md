@@ -578,16 +578,16 @@ $\mathbb{N}$ 上的序关系有如下性质：
 
 经过上述讨论，我们得到了一个扩展的自然数结构 $(\mathbb{N},0,s,+,\cdot,<)$，通常我们所知的自然数就是指这个结构，并且我们还能证明，这种结构是同构唯一的（只要其上定义的运算是本质上相同的）。
 
-具体来说，设 $(X,x_{0},s,+',\cdot',<')$ 是一个自然数结构，那么存在双射 $f\colon \mathbb{N}\to X$ 满足：
+具体来说，设 $(X,x_{0},s,+,\cdot,<)$ 是一个自然数结构，那么存在双射 $f\colon \mathbb{N}\to X$ 满足：
 
 $$
 \begin{gather*}
 \begin{cases}
 f(0)=x_{0} \\
 f(n')=s(f(n)) \\
-f(n+m)=f(n) +' f(m) \\
-f(n \cdot m)=f(n) \cdot' f(m) \\
-n<m \implies f(n) <' f(m)
+f(n+m)=f(n) + f(m) \\
+f(n \cdot m)=f(n) \cdot f(m) \\
+n<m \implies f(n) < f(m)
 \end{cases}
 \end{gather*}
 $$
