@@ -515,7 +515,7 @@ $$
 
 **定义 1.2.7** 乘方（exponentiation）
 
-给定 $m \in \mathbb{N} \setminus \{ 0 \}$，递归地定义 $\mathbb{N}$ 上的**乘方**如下：
+给定 $m \in \mathbb{N}$，递归地定义 $\mathbb{N}$ 上的**乘方**如下：
 
 $$
 \begin{gather*}
