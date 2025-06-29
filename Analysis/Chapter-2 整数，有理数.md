@@ -381,7 +381,7 @@ $\mathbb{Q}$ 上有一个元素 $[(1,1)]\neq \overline{0}$ 满足 $r \cdot [(1,1
 
 **定义 2.3.4** $\mathbb{Q}$ 上的除法
 
-设 $r,s \in \mathbb{Q}$，定义 $\mathbb{Q}$ 上的**除法**为
+设 $r,s \in \mathbb{Q},s\neq \overline{0}$，定义 $\mathbb{Q}$ 上的**除法**为
 
 $$
 r / s=r\cdot s^{-1}

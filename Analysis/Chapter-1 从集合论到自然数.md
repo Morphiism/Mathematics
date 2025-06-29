@@ -554,7 +554,7 @@ $\mathbb{N}$ 上的序关系有如下性质：
 
 接下来我们证明 $\mathbb{N}$ 最重要的性质之一：良序原理。
 
-**定理 1.2.10** 良序原理（Well-ordering Principle）
+**定理 1.2.10** $\mathbb{N}$ 的良序性
 
 设 $L \subset \mathbb{N}$ 且 $L\neq \varnothing$，则 $L$ 有最小元。
 
@@ -564,7 +564,7 @@ $\mathbb{N}$ 上的序关系有如下性质：
 
 设 $m \in M$，则 $\forall n \in L(m\leq n)$. 由于 $M\cap L=\varnothing$，故 $\forall n \in L(m< n)$，从而 $\forall n \in L(m'\leq n)$，即 $m' \in M$. 于是有 $M=\mathbb{N}$，矛盾。
 
-由良序原理我们可以导出以下定理：
+由良序性我们可以导出以下定理：
 
 **定理 1.2.11** 强归纳法（Strong Induction）
 
