@@ -135,7 +135,6 @@ $$
 设 $(X,x_{0},s,+,\cdot,<)$ 是一个自然数算术系统，则存在双射 $f\colon \omega\to X$ 满足：
 
 $$
-\begin{gather*}
 \begin{cases}
 f(0)=x_{0} \\
 f(n')=s(f(n)) \\
@@ -143,7 +142,6 @@ f(n+m)=f(n)+f(m) \\
 f(n\cdot m)=f(n)\cdot f(m) \\
 n<m\implies f(n)<f(m)
 \end{cases}
-\end{gather*}
 $$
 
 **证明**

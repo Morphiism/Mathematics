@@ -284,7 +284,6 @@ $$
 因此 $\overline{\mathbb{Q}}$ 构成了 $\mathbb{R}$ 的一个封闭子集，令 $f\colon \mathbb{Q}\to \overline{\mathbb{Q}}$ 满足 $f(q)=\overline{q}$，则 $f$ 是一个双射，并且满足：
 
 $$
-\begin{gather*}
 \begin{cases}
 f(0)=\overline{0} \\
 f(1)=\overline{1} \\
@@ -292,7 +291,6 @@ f(p+q)=f(p)+f(q) \\
 f(pq)=f(p)f(q) \\
 p<q \implies f(p)<f(q)
 \end{cases}
-\end{gather*}
 $$
 
 因此 $\overline{\mathbb{Q}}$ 同构于 $\mathbb{Q}$，$f$ 将 $\mathbb{Q}$ 同构嵌入 $\mathbb{R}$.

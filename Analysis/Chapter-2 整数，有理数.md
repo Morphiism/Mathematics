@@ -202,7 +202,7 @@ $$
 - 结合性：$(a+b)+c=a+(b+c),(ab)c=a(bc)$
 - 加法单位：存在 $\overline{0}\in \mathbb{Z}$ 使得 $a+\overline{0}=a$
 - 加法逆元：存在 $-a \in \mathbb{Z}$ 使得 $a+(-a)=\overline{0}$
-- 乘法单位：存在 $\overline{1}\in \mathbb{Z}$ 使得 $\overline{1} \cdot a=a$
+- 乘法单位：存在 $\overline{1}\in \mathbb{Z},\overline{1}\neq \overline{0}$ 使得 $\overline{1} \cdot a=a$
 - 分配性：$a(b+c)=ab+ac$
 
 ## 序关系
@@ -276,7 +276,6 @@ $$
 因此 $\overline{\mathbb{N}}$ 构成了 $\mathbb{Z}$ 的一个封闭子集。设 $n \in \mathbb{N}$，令 $f(n)=\overline{n}$，则 $f\colon \mathbb{N}\to \overline{\mathbb{N}}$ 是一个双射，且满足：
 
 $$
-\begin{gather*}
 \begin{cases}
 f(0)=\overline{0} \\
 f(1)=\overline{1} \\
@@ -284,7 +283,6 @@ f(m+n)=f(m)+f(n) \\
 f(m\cdot n)=f(m)\cdot f(n) \\
 m<n \implies f(m)<f(n)
 \end{cases}
-\end{gather*}
 $$
 
 这就是说 $\mathbb{N}$ 同构于 $\overline{\mathbb{N}}$，并且 $f$ 将 $\mathbb{N}$ 同构嵌入 $\mathbb{Z}$ 中。
@@ -397,7 +395,7 @@ $$
 - 结合性：$(r+s)+t=r+(s+t),(rs)t=r(st)$
 - 加法单位：存在 $\overline{0}\in \mathbb{Q}$ 使得 $r+\overline{0}=r$
 - 加法逆元：存在 $-r\in \mathbb{Q}$ 使得 $r+(-r)=\overline{0}$
-- 乘法单位：存在 $\overline{1}\in \mathbb{Q}$ 使得 $\overline{1}\cdot r=r$
+- 乘法单位：存在 $\overline{1}\in \mathbb{Q},\overline{1}\neq \overline{0}$ 使得 $\overline{1}\cdot r=r$
 - 乘法逆元：如果 $r\neq \overline{0}$ 则存在 $r^{-1}\in \mathbb{Q}$ 使得 $r\cdot r^{-1}=\overline{1}$
 - 分配性：$r(s+t)=rs+rt$
 
@@ -469,7 +467,6 @@ $$
 因此 $\overline{\mathbb{Z}}$ 构成了 $\mathbb{Q}$ 的一个封闭子集。设 $n\in \mathbb{Z}$，令 $f(n)=\overline{n}$，则 $f\colon \mathbb{Z}\to \overline{\mathbb{Z}}$ 是一个双射，并且满足：
 
 $$
-\begin{gather*}
 \begin{cases}
 f(0)=\overline{0} \\
 f(1)=\overline{1} \\
@@ -477,7 +474,6 @@ f(m+n)=f(m)+f(n) \\
 f(m\cdot n)=f(m)\cdot f(n) \\
 m<n \implies f(m)<f(n)
 \end{cases}
-\end{gather*}
 $$
 
 于是 $\overline{\mathbb{Z}}$ 同构于 $\mathbb{Z}$，且 $f$ 将 $\mathbb{Z}$ 同构嵌入 $\mathbb{Q}$ 中。
@@ -542,12 +538,10 @@ $$
 设 $q \in \mathbb{Q}$，递归地定义 $\mathbb{Q}$ 上的**乘方**为：
 
 $$
-\begin{gather*}
 \begin{cases}
 q^0=1 \\
 q^{n'}=q^{n}\cdot q
 \end{cases}
-\end{gather*}
 $$
 
 乘方有以下性质：
