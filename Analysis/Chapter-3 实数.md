@@ -485,11 +485,11 @@ $$
 再假设 $y^n>x$，设 $0<\varepsilon<1$，考虑数
 
 $$
-\begin{align*}
+\begin{align}
 (y-\varepsilon)^n &= y^n - ny^{n-1}\varepsilon+\dots+(-1)^n \varepsilon^n \\
 &\geq y^n - n y^{n-1} \varepsilon- \binom{n}{3} y^{n-3} \varepsilon^3-\cdots \\
 &\geq y^n - K\varepsilon
-\end{align*}
+\end{align}
 $$
 
 由于 $y^n>x$，则有 $\varepsilon$ 使得 $y^n-K\varepsilon>x$，从而 $(y-\varepsilon)^n>x$，这表明对任意 $z \in E$ 有 $y-\varepsilon\geq z$（否则 $(y-\varepsilon)^n<z^n\leq x$），于是 $y-\varepsilon$ 也是 $E$ 的上界，与 $y$ 是最小上界矛盾。因此 $y^n=x$.

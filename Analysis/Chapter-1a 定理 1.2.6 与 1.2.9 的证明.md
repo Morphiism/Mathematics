@@ -50,10 +50,10 @@ $$
 (1). 对 $m$ 归纳。$0\cdot n'=0=(0\cdot n)+0$，且
 
 $$
-\begin{gather*}
+\begin{gather}
 m'\cdot n'=(m\cdot n')+n'=mn+m+n' \\
 (m'\cdot n)+m'=mn+n+m'
-\end{gather*}
+\end{gather}
 $$
 
 再根据 $m+n'=n+m'=(m+n)'$ 即证。
@@ -151,24 +151,24 @@ $$
 对 $n$ 归纳。$f(0+m)=f(m)=x_{0}+f(m)=f(0)+f(m)$，假设 $f(n+m)=f(n)+f(m)$，则
 
 $$
-\begin{align*}
+\begin{align}
 f(n'+m) &= s(f(n+m)) \\
 &= s(f(n)+f(m)) \\
 &= s(f(n))+f(m) \\
 &= f(n')+f(m)
-\end{align*}
+\end{align}
 $$
 
 $f(0\cdot m)=f(0)=x_{0}=f(0)\cdot f(m)$，假设 $f(n\cdot m)=f(n)\cdot f(m)$，则
 
 $$
-\begin{align*}
+\begin{align}
 f(n'\cdot m) &= f(n\cdot m+m) \\
 &= f(n\cdot m)+f(m) \\
 &= f(n)\cdot f(m)+f(m) \\
 &= s(f(n))\cdot f(m) \\
 &= f(n')\cdot f(m)
-\end{align*}
+\end{align}
 $$
 
 设 $n<m$，则有 $n+k=m,k\neq 0$，于是 $f(n+k)=f(n)+f(k)=f(m)$. 由于 $f$ 是双射，故 $f(k)\neq x_{0}$，于是有 $f(n)<f(m)$.

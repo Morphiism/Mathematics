@@ -121,10 +121,10 @@ $$
 设 $A \subset X,B \subset X$，则
 
 $$
-\begin{gather*}
+\begin{gather}
 X \setminus (A \cap B)=(X \setminus A) \cup (X \setminus B) \\
 X \setminus (A \cup B)=(X \setminus A) \cap (X \setminus B)
-\end{gather*}
+\end{gather}
 $$
 
 可以通过证明两个方向上的包含来证明上述定理。
@@ -338,11 +338,11 @@ $$
 于是我们就需要添加 PA3 和 PA4 来否定上述的“错误”结构，但 PA1-PA4 仍不足以限定出我们心中的自然数结构，这是因为我们的自然数中可能会出现如下的冗余结构：
 
 $$
-\begin{gather*}
+\begin{gather}
 0 \to s(0) \to ss(0) \to \dots \\
 x \to s(x) \to ss(x) \to \dots \\
 \dots
-\end{gather*}
+\end{gather}
 $$
 
 这就是为什么我们还要添加 PA5，它显示了自然数的一种“最小性”，从而我们的自然数模型只能有一条单向无穷长链：
