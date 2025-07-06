@@ -54,7 +54,7 @@
 
 **公理 AC** 选择公理（Axiom of Choice）
 
-任意集合 $S$ 都存在函数 $g$ 使得对任意 $x \in S,x\ne \varnothing$ 有 $g(x) \in x$.
+任意非空集构成的集合 $S$ 都存在函数 $g$ 使得对任意 $x \in S$ 有 $g(x) \in x$.
 
 ## 外延公理与分离公理
 
