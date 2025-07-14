@@ -542,7 +542,7 @@ $\mathbb{N}$ 上的序关系有如下性质：
 
 同样，为减少篇幅，我们将单开一个章节进行证明。
 
-接下来我们证明 $\mathbb{N}$ 最重要的性质之一：良序原理。
+接下来我们证明 $\mathbb{N}$ 最重要的性质之一：良序性。
 
 **定理 1.2.10** $\mathbb{N}$ 的良序性
 
@@ -558,11 +558,13 @@ $\mathbb{N}$ 上的序关系有如下性质：
 
 **定理 1.2.11** 强归纳法（Strong Induction）
 
-设 $S \subset \mathbb{N}$，$0\in S$ 且 $\forall k<n(k \in S)\implies n \in S$，则 $S=\mathbb{N}$.
+设 $S \subset \mathbb{N}$，且 $\forall k<n(k \in S)\implies n \in S$，则 $S=\mathbb{N}$.
 
 **证明**
 
-令 $M=\{ m \in \mathbb{N} \mid m \not\in S \}$，假设 $M \neq \varnothing$，则根据良序原理，$M$ 有最小元 $m$. 因为 $0 \in S$，故 $m\neq 0$，再由 $m$ 的最小性得 $\forall k<m(k \in S)$，根据 $S$ 的定义可知 $m \in S$，矛盾。于是有 $M=\varnothing$.
+令 $M=\{ m \in \mathbb{N} \mid m \not\in S \}$，假设 $M \neq \varnothing$，则根据良序性，$M$ 有最小元 $m$. 由 $m$ 的最小性得 $\forall k<m(k \in S)$，根据 $S$ 的定义可知 $m \in S$，矛盾。于是有 $M=\varnothing$.
+
+> 注意，这里不要求 $0 \in S$ 是因为它包含在后面的条件中了。当 $n=0$ 时，不存在 $k<n$，于是全称命题 $\forall k<n(k \in S)$ 是空真（可以用反证法证明它），从而就得到了 $0 \in S$.
 
 强归纳法在一些定理的证明中有很大作用，特别是依赖于小于 $n$ 的所有自然数的命题。
 
