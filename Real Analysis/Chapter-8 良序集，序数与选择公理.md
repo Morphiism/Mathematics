@@ -798,6 +798,6 @@ $$
 
 **证明**
 
-给定向量空间 $V$，构造集合 $\mathcal{S}=\{ S \subset V \mid S \text{线性无关} \}$，则 $\mathcal{S}$ 满足有限特征性质（线性无关集的定义：$S$ 线性无关当且仅当 $S$ 的所有有限子集线性无关），由 Tukey 引理知 $\mathcal{S}$ 有 $\subset$-极大元 $B$（称为 $V$ 的极大线性无关集），下证 $\mathrm{span}(B)=V$。
+给定向量空间 $V$，构造集合 $\mathcal{S}=\{ S \subset V \mid S \text{线性无关} \}$，则 $\mathcal{S}$ 满足有限特征性质（线性无关集的定义：$S$ 线性无关当且仅当 $S$ 的所有有限子集线性无关），由 Tukey 引理知 $\mathcal{S}$ 有 $\subset$-极大元 $B$（称为 $V$ 的极大线性无关集），下证 $\mathrm{span}(B)=V$.
 
 假设 $\mathrm{span}(B)\neq V$，则存在 $v \in V\setminus \mathrm{span}(B)$，从而 $B\cup \{ v \}$ 也线性无关，这与 $B$ 的极大性矛盾。因此 $B$ 是 $V$ 的基。
