@@ -325,7 +325,7 @@ $$
 设 $X\subset \mathbb{R}$，函数 $f\colon X\to \mathbb{R},g\colon X\to \mathbb{R}$，$x_{0}\in X$，$f,g$ 都在 $x_{0}$ 处连续，则：
 
 1. $f+g$ 在 $x_{0}$ 处连续
-2. $f\cdot g$ 在 $x_{0}$ 处连续
+2. $fg$ 在 $x_{0}$ 处连续
 3. 如果对任意 $x \in X$ 有 $g(x)\neq 0$，则 $g^{-1}$ 在 $x_{0}$ 处连续
 
 利用上述定理，以及常数函数 $x\mapsto c$ 和恒等函数 $x\mapsto x$ 是连续的事实（可以利用 9.3.2 证明），我们就可以证明多项式

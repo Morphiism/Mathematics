@@ -143,7 +143,7 @@ $$
 
 一个从 $X$ 到 $Y$ 的关系 $R$ 定义为 $R \subset X \times Y$，$Y$ 称为 $R$ 的**陪域**（codomain），$\mathrm{Dom}(R)=\{ x \in X \mid \exists y \in Y((x,y)\in R) \}$ 称为 $R$ 的**定义域**（domain）。
 
-设 $E \subset X$，则称 $R[E]=\{ y \in Y \mid (x,y) \in R, x \in E \}$ 为 $E$ 在 $R$ 下的**像**（image），称 $\mathrm{Ran}(R) = R[X]$ 为 $R$ 的**值域**（range）。设 $G \subset Y$，则称 $R^{-1}[G]=\{ x \in X \mid (x,y) \in R, y \in G \}$ 为 $G$ 在 $R$ 下的**原像**（preimage）。
+设 $E \subset X$，则称 $R[E]=\{ y \in Y \mid (x,y) \in R, x \in E \}$ 为 $E$ 在 $R$ 下的**像**（image），称 $\mathrm{im}(R)=\mathrm{Ran}(R) = R[X]$ 为 $R$ 的**值域**（range）或**像**。设 $G \subset Y$，则称 $R^{-1}[G]=\{ x \in X \mid (x,y) \in R, y \in G \}$ 为 $G$ 在 $R$ 下的**原像**（preimage）。
 
 通常我们将 $(x,y) \in R$ 记作 $xRy$.
 
