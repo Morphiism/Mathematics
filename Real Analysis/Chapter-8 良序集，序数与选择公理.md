@@ -127,7 +127,7 @@ $$
 
 设 $Y=A\setminus X\neq \varnothing$，则 $Y$ 有最小元，设为 $x$.
 
-设 $y<x$，则由 $x$ 的最小性知 $x \not\in Y$，则 $x \in X$，于是 $A_{x}\subset X$.
+设 $y<x$，则由 $x$ 的最小性知 $y \not\in Y$，则 $y \in X$，于是 $A_{x}\subset X$.
 
 设 $y \in X$，假设 $x\leq y$，则 $y \in Y$，矛盾。故 $y \in A_{x}$，从而 $X\subset A_{x}$.
 
