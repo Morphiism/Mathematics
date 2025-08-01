@@ -421,7 +421,7 @@ $$
 简单来说，上述定理表明，如果 $(f_{n}')$ 一致收敛，并且对于某个 $x_{0}$，序列 $(f_{n}(x_{0}))$ 也收敛，那么 $(f_{n})$ 一致收敛，并且
 
 $$
-\dfrac{\mathrm{d} }{\mathrm{d} x}\lim_{ n \to \infty } f^{(n)}(x)=\lim_{ n \to \infty } \dfrac{\mathrm{d} }{\mathrm{d} x} f^{(n)}(x)
+\dfrac{\mathrm{d} }{\mathrm{d} x}\lim_{ n \to \infty } f_{n}(x)=\lim_{ n \to \infty } \dfrac{\mathrm{d} }{\mathrm{d} x} f_{n}(x)
 $$
 
 将上述定理应用到级数上，我们就有推论：
