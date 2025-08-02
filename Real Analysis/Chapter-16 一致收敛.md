@@ -237,18 +237,18 @@ $$
 现在我们令
 
 $$
-C^{0}(X,Y)=\{ f \mid f\colon X\to Y \text{是有界连续函数} \}
+C_{b}(X,Y)=\{ f \mid f\colon X\to Y \text{是有界连续函数} \}
 $$
 
-那么定理 16.2.1 指出：$C^{0}(X,Y)$ 在 $B(X,Y)$ 中是闭集。事实上，我们还可以更进一步。
+那么定理 16.2.1 指出：$C_{b}(X,Y)$ 在 $B(X,Y)$ 中是闭集。事实上，我们还可以更进一步。
 
 **定理 16.3.2**
 
-设 $(X,d_{X}),(Y,d_{Y})$ 是度量空间，$Y$ 是完备的，那么 $C^{0}(X,Y)$ 是 $B(X,Y)$ 的完备子空间。
+设 $(X,d_{X}),(Y,d_{Y})$ 是度量空间，$Y$ 是完备的，那么 $C_{b}(X,Y)$ 是 $B(X,Y)$ 的完备子空间。
 
 **证明**
 
-设 $(f^{(n)})$ 是 $C^{0}(X,Y)$ 中的 Cauchy 序列，即对任意 $\varepsilon>0$，存在 $N$ 使得对任意 $n,m>N$ 和 $x \in X$ 有
+设 $(f^{(n)})$ 是 $C_{b}(X,Y)$ 中的 Cauchy 序列，即对任意 $\varepsilon>0$，存在 $N$ 使得对任意 $n,m>N$ 和 $x \in X$ 有
 
 $$
 d_{Y}(f^{(n)}(x),f^{(m)}(x))\leq d_{\infty}(f^{(n)},f^{(m)})<\varepsilon
@@ -262,7 +262,7 @@ $$
 d_{Y}(f^{(m)}(x),f(x))\leq d_{Y}(f^{(m)}(x),f^{(N_{x}+1)}(x))+d_{Y}(f^{(N_{x}+1)}(x),f(x))<2\varepsilon
 $$
 
-从而 $(f^{(n)})$ 一致收敛于 $f$，根据定理 16.2.1 和 16.2.4 知 $f \in C^{0}(X,Y)$，这就完成了证明。
+从而 $(f^{(n)})$ 一致收敛于 $f$，根据定理 16.2.1 和 16.2.4 知 $f \in C_{b}(X,Y)$，这就完成了证明。
 
 # Section 4: 函数级数
 
@@ -314,7 +314,7 @@ $$
 d_{\infty}(S^{(n+p)},S^{(n)})=\lVert S^{(n+p)}-S^{(n)} \rVert _{\infty}\leq\lVert f^{(n+1)} \rVert _{\infty}+\dots+\lVert f^{(n+p)} \rVert _{\infty}<\varepsilon
 $$
 
-从而 $(S^{(n)})_{n=0}^{\infty}$ 是 $C^{0}(X,\mathbb{R})$ 中的 Cauchy 序列，由完备性知其按度量 $d_{\infty}$ 收敛，即证。
+从而 $(S^{(n)})_{n=0}^{\infty}$ 是 $C_{b}(X,\mathbb{R})$ 中的 Cauchy 序列，由完备性知其按度量 $d_{\infty}$ 收敛，即证。
 
 利用 Weierstrass M 判别法，我们可以证明很多级数的一致收敛性，下面我们给出一个例子。
 
@@ -399,7 +399,7 @@ $$
 |f_{n}(x)-f_{m}(x)|\leq |f_{n}(x_{0})-f_{m}(x_{0})|+\varepsilon|x-x_{0}|
 $$
 
-由于 $\lim_{ n \to \infty }f_{n}(x_{0})$ 存在，故存在 $N_{2}>N_{1}$ 使得对任意 $n,m>N_{2}$ 有 $|f_{n}(x_{0})-f_{m}(x_{0})|<\varepsilon$，又 $x \in[a,b]$，故存在 $M$ 使得 $|x-x_{0}|\leq M$，从而 $|f_{n}(x)-f_{m}(x)|<\varepsilon(1+M)$，显然 $f_{n}$ 是 $[a,b]$ 上的有界连续函数，故 $(f_{n})$ 是 $C^{0}([a,b],\mathbb{R})$ 上的 Cauchy 序列，从而 $(f_{n})$ 一致收敛于 $f$.
+由于 $\lim_{ n \to \infty }f_{n}(x_{0})$ 存在，故存在 $N_{2}>N_{1}$ 使得对任意 $n,m>N_{2}$ 有 $|f_{n}(x_{0})-f_{m}(x_{0})|<\varepsilon$，又 $x \in[a,b]$，故存在 $M$ 使得 $|x-x_{0}|\leq M$，从而 $|f_{n}(x)-f_{m}(x)|<\varepsilon(1+M)$，显然 $f_{n}$ 是 $[a,b]$ 上的有界连续函数，故 $(f_{n})$ 是 $C_{b}([a,b],\mathbb{R})$ 上的 Cauchy 序列，从而 $(f_{n})$ 一致收敛于 $f$.
 
 任取 $x,y \in[a,b]$，则对任意 $n,m>N_{1}$ 有
 
@@ -474,10 +474,10 @@ $$
 P([a,b],\mathbb{R})=\{ p \mid p\colon [a,b]\to \mathbb{R} \text{是多项式} \}
 $$
 
-每个多项式都连续，故 $P([a,b],\mathbb{R})$ 是 $C^{0}([a,b],\mathbb{R})$ 的子空间，那么 Weierstrass 逼近定理指出：每个 $f \in C^{0}([a,b],\mathbb{R})$ 都是 $P([a,b],\mathbb{R})$ 的附着点，或者说多项式空间的闭包就是连续函数空间：
+每个多项式都连续，故 $P([a,b],\mathbb{R})$ 是 $C_{b}([a,b],\mathbb{R})$ 的子空间，那么 Weierstrass 逼近定理指出：每个 $f \in C_{b}([a,b],\mathbb{R})$ 都是 $P([a,b],\mathbb{R})$ 的附着点，或者说多项式空间的闭包就是连续函数空间：
 
 $$
-\overline{P([a,b],\mathbb{R})}=C^{0}([a,b],\mathbb{R})
+\overline{P([a,b],\mathbb{R})}=C_{b}([a,b],\mathbb{R})
 $$
 
 根据定理 14.2.4，这表明每个连续函数 $f\colon [a,b]\to \mathbb{R}$ 都是某个多项式序列 $(p_{n})$ 的一致极限，这就是一致逼近的内涵。
