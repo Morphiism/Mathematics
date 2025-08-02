@@ -539,7 +539,7 @@ $$
 \hat{f}(-n)e_{-n}+\hat{f}(n)e_{n} &= \int_{0}^{1}f(x)e^{2\pi inx}\mathrm{d} x (\cos(2\pi nx)-i \sin(2\pi nx)) \\
 &+ \int_{0}^{1}f(x)e^{-2\pi inx}\mathrm{d} x(\cos(2\pi nx)+i \sin(2\pi nx)) \\
 &= 2 \int_{0}^{1}f(x)\cos(2\pi nx)\mathrm{d} x (\cos(2\pi nx)) \\
-&+ 2 \int_{0}^{2}f(x)\sin(2\pi nx)\mathrm{d} x (\sin(2\pi nx)) \\
+&+ 2 \int_{0}^{1}f(x)\sin(2\pi nx)\mathrm{d} x (\sin(2\pi nx)) \\
 &= a_{n}\cos(2\pi nx)+b_{n}\sin(2\pi nx)
 \end{align}
 $$
