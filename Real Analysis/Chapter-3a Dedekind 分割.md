@@ -80,7 +80,7 @@ $$
 
 这可以由下图来说明：
 
-![](https://picx.zhimg.com/v2-85f7f8aaca202641f9ef12b13831d3d5_1440w.jpg)
+![](images/1.png)
 
 可以验证 $-\alpha$ 是一个分割，且 $\alpha+(-\alpha)=\overline{0}$.
 

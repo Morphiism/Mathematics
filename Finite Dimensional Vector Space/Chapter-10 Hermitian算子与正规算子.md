@@ -134,23 +134,23 @@ $$
 
 $\lambda$ 是 $T$ 的特征值当且仅当 $\ker(T-\lambda I)\ne \{0\}$，两边取正交补，当且仅当 $\mathrm{im}(T^\dagger-\overline\lambda I)\ne V$，当且仅当 $T^\dagger-\overline\lambda I$ 不可逆，当且仅当 $\overline\lambda$ 是 $T^\dagger$ 的特征值。
 
-接下来我们介绍两类在内积空间上极为重要的算子：Hermite算子和正规算子。
+接下来我们介绍两类在内积空间上极为重要的算子：Hermitian算子和正规算子。
 
-**定义 10.1.6** Hermite算子（Hermitian Operator）
+**定义 10.1.6** Hermitian算子（Hermitian Operator）
 
-内积空间 $V$ 上的算子 $T$ 称为一个**Hermite算子**如果 $T=T^\dagger$，即对任意 $v,w\in V$ 有 $\langle Tv,w\rangle=\langle v,Tw\rangle$
+内积空间 $V$ 上的算子 $T$ 称为一个**Hermitian算子**如果 $T=T^\dagger$，即对任意 $v,w\in V$ 有 $\langle Tv,w\rangle=\langle v,Tw\rangle$
 
-我们可以证明，Hermite算子的和也是Hermite算子，实数与Hermite算子的乘积也是Hermite算子。
+我们可以证明，Hermitian算子的和也是Hermitian算子，实数与Hermitian算子的乘积也是Hermitian算子。
 
-在复内积空间上，Hermite算子的性质类似于实数在复数域中的性质，而伴随对应于复数的共轭，我们之后能看到更多支持这一类比的性质。
+在复内积空间上，Hermitian算子的性质类似于实数在复数域中的性质，而伴随对应于复数的共轭，我们之后能看到更多支持这一类比的性质。
 
 **定理 10.1.7**
 
-Hermite算子的特征值都是实的。
+Hermitian算子的特征值都是实的。
 
 **证明**
 
-设 $T\in\mathcal L(V)$ 是Hermite算子，$\lambda$ 是 $T$ 的特征值，对应的特征向量是 $v$，则
+设 $T\in\mathcal L(V)$ 是Hermitian算子，$\lambda$ 是 $T$ 的特征值，对应的特征向量是 $v$，则
 
 $$
 \lambda \|v\|^2=\langle \lambda v,v\rangle=\langle Tv,v\rangle=\langle v,Tv\rangle=\langle v,\lambda v\rangle=\overline \lambda \|v\|^2
@@ -177,11 +177,11 @@ $$
 
 注意右边每一项都是 $\langle Tv,v\rangle$ 的形式，故 $\langle Tu,w\rangle=0$，取 $w=Tu$ 即得 $T=0$。
 
-下面的定理给出了Hermite算子与实数性质相似的另一个例子。
+下面的定理给出了Hermitian算子与实数性质相似的另一个例子。
 
 **定理 10.1.9**
 
-设 $V$ 是复内积空间，$T\in\mathcal L(V)$，则 $T$ 是Hermite算子当且仅当对任意 $v\in V$ 有 $\langle Tv,v\rangle\in\mathbb R$
+设 $V$ 是复内积空间，$T\in\mathcal L(V)$，则 $T$ 是Hermitian算子当且仅当对任意 $v\in V$ 有 $\langle Tv,v\rangle\in\mathbb R$
 
 **证明**
 
@@ -191,15 +191,15 @@ $$
 \langle Tv,v\rangle-\overline{\langle Tv,v\rangle}=\langle Tv,v\rangle-\langle v,Tv\rangle=\langle (T-T^\dagger)v,v\rangle
 $$
 
-若 $T$ 是Hermite算子，则 $\langle Tv,v\rangle=\overline{\langle Tv,v\rangle}$，即 $\langle Tv,v\rangle\in\mathbb R$。
+若 $T$ 是Hermitian算子，则 $\langle Tv,v\rangle=\overline{\langle Tv,v\rangle}$，即 $\langle Tv,v\rangle\in\mathbb R$。
 
-若 $\langle Tv,v\rangle\in\mathbb R$，则 $\langle (T-T^\dagger)v,v\rangle=0$，从而 $T=T^\dagger$，即 $T$ 是Hermite算子，即证。
+若 $\langle Tv,v\rangle\in\mathbb R$，则 $\langle (T-T^\dagger)v,v\rangle=0$，从而 $T=T^\dagger$，即 $T$ 是Hermitian算子，即证。
 
-上面两个定理仅对复内积空间成立，和线性代数中的大多数情形一样。在实内积空间中，我们很容易能找到反例：平面上的 $90^\circ$ 旋转 $R$ 满足 $R\ne 0,\langle Rv,v\rangle=0$。然而，对于实内积空间上的Hermite算子，我们可以证明不会有这种情况。
+上面两个定理仅对复内积空间成立，和线性代数中的大多数情形一样。在实内积空间中，我们很容易能找到反例：平面上的 $90^\circ$ 旋转 $R$ 满足 $R\ne 0,\langle Rv,v\rangle=0$。然而，对于实内积空间上的Hermitian算子，我们可以证明不会有这种情况。
 
 **定理 10.1.10**
 
-设 $T$ 是 $V$ 上的Hermite算子满足对任意 $v\in V$ 有 $\langle Tv,v\rangle=0$，则 $T=0$
+设 $T$ 是 $V$ 上的Hermitian算子满足对任意 $v\in V$ 有 $\langle Tv,v\rangle=0$，则 $T=0$
 
 **证明**
 
@@ -209,7 +209,7 @@ $$
 \langle Tu,w\rangle=\dfrac{\langle T(u+w),u+w\rangle-\langle T(u-w),u-w\rangle}{4}
 $$
 
-要证明上面的等式需要用到Hermite算子的性质：
+要证明上面的等式需要用到Hermitian算子的性质：
 
 $$
 \langle Tu,w\rangle=\langle u,Tw\rangle=\langle Tw,u\rangle
@@ -217,13 +217,13 @@ $$
 
 于是我们有 $\langle Tu,w\rangle=0$，取 $w=Tu$ 得 $T=0$。
 
-下面我们介绍正规算子，它的性质比Hermite算子稍弱一些。
+下面我们介绍正规算子，它的性质比Hermitian算子稍弱一些。
 
 **定义 10.1.11** 正规的（Normal）
 
 内积空间 $V$ 上的算子 $T$ 是**正规的**，如果 $TT^\dagger=T^\dagger T$
 
-显然，Hermite算子都是正规的（因为 $T^\dagger=T$），因此对于正规算子成立的结论对Hermite算子也成立。
+显然，Hermitian算子都是正规的（因为 $T^\dagger=T$），因此对于正规算子成立的结论对Hermitian算子也成立。
 
 下面的定理给出了正规算子的一个简单刻画。
 
@@ -233,7 +233,7 @@ $$
 
 **证明**
 
-设 $v\in V$，则 $T$ 是正规的当且仅当 $TT^\dagger-T^\dagger T=0$，当且仅当 $\langle (TT^\dagger-T^\dagger T)v,v\rangle=0$，当且仅当 $\langle TT^\dagger v,v\rangle=\langle T^\dagger Tv,v\rangle$，当且仅当 $\|T^\dagger v\|^2=\|Tv\|^2$。其中第二个“当且仅当”能够成立是因为 $TT^\dagger-T^\dagger T$ 是Hermite算子。
+设 $v\in V$，则 $T$ 是正规的当且仅当 $TT^\dagger-T^\dagger T=0$，当且仅当 $\langle (TT^\dagger-T^\dagger T)v,v\rangle=0$，当且仅当 $\langle TT^\dagger v,v\rangle=\langle T^\dagger Tv,v\rangle$，当且仅当 $\|T^\dagger v\|^2=\|Tv\|^2$。其中第二个“当且仅当”能够成立是因为 $TT^\dagger-T^\dagger T$ 是Hermitian算子。
 
 我们之前讲到，伴随算子的特征值等于算子特征值的复共轭，但没有关于特征向量的讨论。下面我们将证明正规算子关于特征向量的两个重要定理，它们是谱定理的基础。
 
@@ -266,7 +266,7 @@ $$
 
 即 $\langle v,w\rangle=0$。
 
-因此，我们可以讨论使用规范正交基来对角化正规算子与Hermite算子的可行性，这正是下一节：谱定理的主要内容。
+因此，我们可以讨论使用规范正交基来对角化正规算子与Hermitian算子的可行性，这正是下一节：谱定理的主要内容。
 
 # Section 2: 谱定理
 
@@ -312,7 +312,7 @@ $$
 
 由定理5.3.7，$2\to 3$ 是显然的。这就完成了证明。
 
-接下来我们考虑实谱定理，我们已经见过实正规算子不可对角化的例子：平面上的旋转，因此，实谱定理的条件应当比复谱定理更加严格：我们要求 $T$ 是Hermite算子。在证明之前，我们先做一些准备工作。
+接下来我们考虑实谱定理，我们已经见过实正规算子不可对角化的例子：平面上的旋转，因此，实谱定理的条件应当比复谱定理更加严格：我们要求 $T$ 是Hermitian算子。在证明之前，我们先做一些准备工作。
 
 在第八章，我们介绍了处理实向量空间上的算子的常用方法，即将实向量空间扩展为复向量空间，然后利用复算子的性质推导实算子的性质。具体来说，我们将利用复谱定理以及定理10.1.7来证明实谱定理。在此之前，我们需要找到一种将实内积空间扩张的方法。
 
@@ -332,7 +332,7 @@ $$
 
 **定理 10.2.3**
 
-设 $V$ 是实内积空间，$T\in\mathcal L(V)$ 是Hermite算子，则 $T$ 在复内积空间 $V_{\mathbb C}$（取定理10.2.2中的内积）上的复化 $T_{\mathbb C}$ 也是Hermite算子。
+设 $V$ 是实内积空间，$T\in\mathcal L(V)$ 是Hermitian算子，则 $T$ 在复内积空间 $V_{\mathbb C}$（取定理10.2.2中的内积）上的复化 $T_{\mathbb C}$ 也是Hermitian算子。
 
 **证明**
 
@@ -348,23 +348,23 @@ $$
 \end{align*}
 $$
 
-因此 $T_{\mathbb C}$ 是Hermite算子。
+因此 $T_{\mathbb C}$ 是Hermitian算子。
 
-回顾一下，所有Hermite算子都是正规算子，于是我们立即得到下面的定理：
+回顾一下，所有Hermitian算子都是正规算子，于是我们立即得到下面的定理：
 
 **定理 10.2.4** 实谱定理（Real Spectral Theorem）
 
 设 $V$ 是实内积空间，$T\in\mathcal L(V)$，则以下条件等价：
 
-1. $T$ 是Hermite算子
+1. $T$ 是Hermitian算子
 2. $V$ 有一个 $T$ 的特征向量构成的规范正交基
 3. $T$ 关于 $V$ 的某个规范正交基有对角矩阵
 
 **证明**
 
-首先证 $3\to 1$，设 $T$ 在某个规范正交基下有对角矩阵 $A$，则 $A^T=A$，从而 $T^\dagger=T$，即 $T$ 是Hermite算子。
+首先证 $3\to 1$，设 $T$ 在某个规范正交基下有对角矩阵 $A$，则 $A^T=A$，从而 $T^\dagger=T$，即 $T$ 是Hermitian算子。
 
-现在设1成立。则 $T$ 的复化 $T_{\mathbb C}\in\mathcal L(V_{\mathbb C})$ 是Hermite算子，应用复谱定理，则在 $V_{\mathbb C}$ 的规范正交基 $e_1+if_1,\dots,e_n+if_n$ 下 $T_{\mathbb C}$ 有对角矩阵，且矩阵对角线上为 $T_{\mathbb C}$ 的特征值。
+现在设1成立。则 $T$ 的复化 $T_{\mathbb C}\in\mathcal L(V_{\mathbb C})$ 是Hermitian算子，应用复谱定理，则在 $V_{\mathbb C}$ 的规范正交基 $e_1+if_1,\dots,e_n+if_n$ 下 $T_{\mathbb C}$ 有对角矩阵，且矩阵对角线上为 $T_{\mathbb C}$ 的特征值。
 
 由定理10.1.7可知，$T_{\mathbb C}$ 的特征值均为实数，于是有
 
@@ -376,15 +376,15 @@ $$
 
 $2\to 3$ 是显然的。这就完成了证明。
 
-复谱定理完全刻画了复内积空间上的正规算子（进而刻画了Hermite算子），而实谱定理完全刻画了实内积空间上的Hermite算子。接下来，我们考虑实内积空间上的正规算子，这一部分极大地依赖于定理8.2.1：非零有限维向量空间上的算子有一维或二维不变子空间。
+复谱定理完全刻画了复内积空间上的正规算子（进而刻画了Hermitian算子），而实谱定理完全刻画了实内积空间上的Hermitian算子。接下来，我们考虑实内积空间上的正规算子，这一部分极大地依赖于定理8.2.1：非零有限维向量空间上的算子有一维或二维不变子空间。
 
-首先我们考虑二维实内积空间上的正规非Hermite算子。
+首先我们考虑二维实内积空间上的正规非Hermitian算子。
 
 **定理 10.2.5**
 
 设 $V$ 是二维实内积空间，$T\in\mathcal L(V)$，则以下条件等价：
 
-1. $T$ 是正规算子但不是Hermite算子
+1. $T$ 是正规算子但不是Hermitian算子
 2. $T$ 关于 $V$ 的每个规范正交基的矩阵都具有形式
 
 $$
@@ -415,7 +415,7 @@ $$
 A^T A=AA^T=\mathrm{diag}(a^2+b^2,a^2+b^2)
 $$
 
-但 $A^T\ne A$，因此 $T$ 是正规的但不是Hermite算子。
+但 $A^T\ne A$，因此 $T$ 是正规的但不是Hermitian算子。
 
 现设1成立。设 $e_1,e_2$ 是 $V$ 的规范正交基，则
 
@@ -440,7 +440,7 @@ ac+bd & c^2+d^2
 = AA^T
 $$
 
-则 $b^2=c^2$，即 $b=c$ 或 $b=-c$，因为 $T$ 不是Hermite算子，所以 $b=-c$，则有 $ab-bd=-ab+bd$，即 $ab=bd$。显然 $b\ne 0$（否则 $A^T=A$），故 $a=d$。于是
+则 $b^2=c^2$，即 $b=c$ 或 $b=-c$，因为 $T$ 不是Hermitian算子，所以 $b=-c$，则有 $ab-bd=-ab+bd$，即 $ab=bd$。显然 $b\ne 0$（否则 $A^T=A$），故 $a=d$。于是
 
 $$
 A=\begin{pmatrix}
@@ -528,7 +528,7 @@ $$
 
 由于 $T$ 与其伴随可交换（因为 $T$ 是正规的），则 $T|_U$ 与 $T^\dagger |_U=(T|_U)^\dagger$ 可交换，从而 $T|_U$ 是正规的。由于 $U^\perp$ 也在 $T$ 下不变，从而用 $U^\perp$ 替换 $U$ 即可得 $T|_{U^\perp}$ 是正规的。
 
-上述引理在 $T$ 是Hermite算子时有一个更强的版本，利用那个引理，我们可以使用归纳法（而不是复化）证明实谱定理。
+上述引理在 $T$ 是Hermitian算子时有一个更强的版本，利用那个引理，我们可以使用归纳法（而不是复化）证明实谱定理。
 
 下面我们来刻画实内积空间上的正规算子。
 
@@ -552,11 +552,11 @@ $$
 
 我们先证 $2\to 1$。如果 $T$ 关于某个规范正交基的矩阵有上述形式，则 $A^T A$ 与 $AA^T$ 的结果都是与 $A$ 形式相同的分块对角矩阵，并且每个块都与其对应的转置相乘。显然 $1\times 1$ 矩阵与其转置是交换的，且我们在定理10.2.5中验证了具有上述形式的 $2\times 2$ 矩阵是交换的。因此总的来说，$A$ 与 $A^T$ 是交换的，即 $T$ 是正规的。
 
-设1成立，我们对 $n=\dim V$ 归纳。当 $n=1$ 时，结论显然成立，当 $n=2$ 时，如果 $T$ 是Hermite算子，则应用实谱定理，如果不是Hermite算子，则应用定理10.2.5。
+设1成立，我们对 $n=\dim V$ 归纳。当 $n=1$ 时，结论显然成立，当 $n=2$ 时，如果 $T$ 是Hermitian算子，则应用实谱定理，如果不是Hermitian算子，则应用定理10.2.5。
 
 现在假设结论对于维数小于 $n$ 的空间都成立。如果 $V$ 有在 $T$ 下不变的一维子空间，则令 $U$ 等于该子空间，否则令 $U$ 等于 $V$ 的二维不变子空间。
 
-如果 $\dim U=1$，则取 $U$ 中一个范数为1的向量 $u$，则 $u$ 是 $U$ 的规范正交基，则 $T|_U$ 有 $1\times 1$ 矩阵 $(\lambda)$。如果 $\dim U=2$，则 $T|_U$ 是正规的，但不是Hermite算子，因此可以取一个规范正交基使得 $T|_U$ 有具有上述形式的 $2\times 2$ 矩阵。
+如果 $\dim U=1$，则取 $U$ 中一个范数为1的向量 $u$，则 $u$ 是 $U$ 的规范正交基，则 $T|_U$ 有 $1\times 1$ 矩阵 $(\lambda)$。如果 $\dim U=2$，则 $T|_U$ 是正规的，但不是Hermitian算子，因此可以取一个规范正交基使得 $T|_U$ 有具有上述形式的 $2\times 2$ 矩阵。
 
 由于 $V=U\oplus U^\perp$，且 $U^\perp$ 在 $T$ 下不变，$T|_{U^\perp}$ 是 $U^\perp$ 上的正规算子，由归纳假设，存在一个规范正交基使 $T|_{U^\perp}$ 的矩阵具有要求的形式。把这个基与 $U$ 的基放在一起，都得到了 $V$ 的一个规范正交基，且在这个基下 $T$ 的矩阵具有要求的形式。这就证明了 $1\to 2$。
 
@@ -566,6 +566,6 @@ $$
 
 # Section 3: 总结
 
-本章我们证明了谱定理，完全描述了内积空间上的Hermite算子和正规算子。下一章，我们将研究一类特殊的正规算子：**等距同构**，以及一类特殊的Hermite算子：**半正定算子**。最后，我们将把它们结合起来，证明**极分解定理**，这是奇异值分解的算子形式。
+本章我们证明了谱定理，完全描述了内积空间上的Hermitian算子和正规算子。下一章，我们将研究一类特殊的正规算子：**等距同构**，以及一类特殊的Hermitian算子：**半正定算子**。最后，我们将把它们结合起来，证明**极分解定理**，这是奇异值分解的算子形式。
 
 本期内容就是这样，感谢观看！

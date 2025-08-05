@@ -178,6 +178,8 @@ $$v+U=\{v+u\colon u\in U\}$$
 称为$V$的**仿射子集**，并称$v+U$与$U$**平行**。从而商集$V/U$就是所有与$U$平行的仿射子集构成的集合：
 $$V/U=\{v+U\colon v\in V\}$$
 
+![](images/4.png)
+
 直观来看，$v+U$就是$U$向着$v$的方向平移了$v$的长度个单位，因此“平行”一词用在这里是恰当的。
 
 读者可以验证，在如下定义的加法和数乘下，$V/U$是一个向量空间：
@@ -200,6 +202,8 @@ $V/U$是有限维的，从而有一个基$v_1+U,\dots,v_m+U$。设$v\in V$，则
 $$v+U=(a_1v_1+\dots+a_mv_m)+U$$
 
 令$u=v-(a_1v_1+\dots+a_mv_m)\in U$，定义映射$\varphi\colon V\to U\times (V/U),\varphi(v)=(u,v+U)$，则$\varphi$是线性的，且是单的。为了证明满性，设$(u,v+U)\in U\times (V/U)$，令$w=(a_1v_1+\dots+a_mv_m)+u\in V$，则$\varphi(w)=(u,v+U)$，即证。
+
+![](images/5.png)
 
 以上定理表明，对于线性映射$T\colon V\to W$，每个$v$都自然地对应到$(u,v+\ker T)$，并且存在$v_p\in v+\ker T$使得$v=u+v_p$，其中$u,v_p$分别被称为方程$Tv=w$的**通解**和**特解**。此外，特解（在等价关系的意义下）是唯一的。
 
