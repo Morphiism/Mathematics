@@ -156,7 +156,7 @@ $$
 
 确定了 $G_{\lambda_j}$ 部分阶数为 $k$ 的Jordan块的数量。因此Jordan块的结构是由 $N$ 的核空间维数唯一确定的，从而Jordan形除了Jordan块的排序外是唯一确定的。
 
-现在我们将视线转向内积空间，如果不做特殊说明，那么总是取Euclid内积 $\langle u,v\rangle=u^T \overline{v}=v^H u$。
+现在我们将视线转向内积空间，如果不做特殊说明，那么总是取Euclidean内积 $\langle u,v\rangle=u^T \overline{v}=v^H u$。
 
 以下的分解对应了Gram-Schmidt过程。
 
