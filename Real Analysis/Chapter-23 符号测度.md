@@ -405,7 +405,7 @@ $$
 
 这就完成了证明。
 
-最后，我们再给出一个复测度的性质，通常也称为三角不等式。
+下面的性质通常称为测度的三角不等式。
 
 **定理 23.3.5** 三角不等式（triangle inequality）
 
@@ -420,5 +420,37 @@ $$
 $$
 
 即证。
+
+最后，我们再给出一个定理，它表现了复测度的四个不同表示。
+
+**定理 23.3.6**
+
+设 $\nu$ 是 $(X,\mathcal{M})$ 上的复测度，对任意 $E \in \mathcal{M}$，定义
+
+$$
+\begin{gather}
+\mu_{1}(E)=\sup \left\{  \sum_{j=1}^{n} |\nu(E_{j})| \middle| n\geq 1, E_{1},\dots,E_{n} \text{不相交}, E=\bigcup_{j=1}^{n} E_{j} \right\} \\
+\mu_{2}(E)=\sup \left\{  \sum_{j=1}^{\infty} |\nu(E_{j})| \middle| E_{1},E_{2}\dots \text{不相交}, E=\bigcup_{j=1}^{\infty} E_{j} \right\} \\
+\mu_{3}(E)=\sup \left\{  \left\lvert  \int_{E} f  \mathrm{d} \nu \right\rvert \middle| |f|\leq 1  \right\}
+\end{gather}
+$$
+
+则 $\mu_{1}=\mu_{2}=\mu_{3}=|\nu|$.
+
+**证明**
+
+设 $E=\bigcup_{j=1}^{n}E_{j}$，将 $E_{n}$ 分割为 $E_{n}=\bigcup_{j=n}^{\infty}E_{j}'$，对于 $1\leq j< n$，定义 $E_{j}'=E_{j}$，则有 $E=\bigcup_{j=1}^{\infty}E_{j}'$，$E'_{1},E'_{2},\dots$ 不相交，并且由三角不等式得 $\sum_{j=1}^{n}|\nu(E_{j})|\leq \sum_{j=1}^{\infty}|\nu(E_{j}')|$，从而 $\mu_{1}\leq \mu_{2}$.
+
+设 $E=\bigcup_{j=1}^{\infty}E_{j}$，令 $f=\sum_{j=1}^{\infty}c_{j}\chi_{E_{j}}$，其中 $c_{j}=\exp(-i \mathrm{arg}\ \nu(E_{j}))$，于是 $c_{j}\nu(E_{j})=|\nu(E_{j})|$，从而 $\int_{E}f\mathrm{d}\nu=\sum_{j=1}^{\infty}|\nu(E_{j})|$，因此我们有 $\mu_{2}\leq \mu_{3}$.
+
+设 $|f|\leq 1$，则 $\left\lvert  \int_{E}f\mathrm{d}\nu  \right\rvert \leq \int_{E}|f|\mathrm{d}|\nu| \leq|\nu|(E)$，故 $\mu_{3}\leq|\nu|$. 再令 $f=\overline{\dfrac{\mathrm{d}\nu}{\mathrm{d}|\nu|}}$，则 $\int_{E}f\mathrm{d}\nu=\int_{E}\mathrm{d}|\nu|=|\nu|(E)$，于是 $|\nu|\leq \mu_{3}$，从而 $\mu_{3}=|\nu|$.
+
+最后，我们要证 $\mu_{3}\leq \mu_{1}$. 设 $|f|\leq 1$，则存在简单函数 $\phi=\sum_{j=1}^{n}c_{j}\chi_{E_{j}}$ 使得 $|c_{j}|\leq 1$ 且 $\left\lvert  \int_{E}(f-\phi)\mathrm{d}\nu  \right\rvert<\varepsilon$，从而
+
+$$
+\left\lvert  \int_{E}f\mathrm{d} \nu  \right\rvert \leq \left\lvert  \int_{E}\phi \mathrm{d} \nu  \right\rvert +\varepsilon\leq \sum_{j=1}^{n} |\nu(E_{j})|+\varepsilon
+$$
+
+根据 $\varepsilon$ 的任意性就有 $\mu_{3}\leq \mu_{1}$，这就完成了证明。
 
 复测度论，或者说复概率论，是量子力学的数学基础，这里我们只是简单地介绍了一些内容。
