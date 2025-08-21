@@ -74,7 +74,7 @@ $f$ 可测显然可以推出后面的命题，现设对任意 $E \in \mathcal{E}
 
 **证明**
 
-$f+g,fg$ 分别是直和 $f\oplus g$ 与加法函数、乘法函数的复合，加法和乘法函数是连续的，从而 $(\mathcal{B}_{\mathbb{C}},\mathcal{B}_{\mathbb{C}})$-可测，根据定理 21.1.5，$f\oplus g$ 是 $\mathcal{M}$-可测的，故 $f+g,fg$ 是 $\mathcal{M}$-可测的。由于倒数函数 $x\mapsto \dfrac{1}{x}$ 在 $x\neq 0$ 处连续，从而 $\dfrac{1}{g}$ 作为 $g$ 和倒数函数的复合是 $\mathcal{M}$-可测的。
+$f+g,fg$ 分别是直和 $f\oplus g$ 与加法函数、乘法函数的复合，加法和乘法函数是连续的，从而 $(\mathcal{B}_{\mathbb{C}},\mathcal{B}_{\mathbb{C}})$-可测，根据定理 21.1.6，$f\oplus g$ 是 $\mathcal{M}$-可测的，故 $f+g,fg$ 是 $\mathcal{M}$-可测的。由于倒数函数 $x\mapsto \dfrac{1}{x}$ 在 $x\neq 0$ 处连续，从而 $\dfrac{1}{g}$ 作为 $g$ 和倒数函数的复合是 $\mathcal{M}$-可测的。
 
 上述定理对 $X$ 到 $\mathbb{R}^{*}$ 的函数也成立，只要我们避开诸如 $\infty-\infty$ 或者 $0\cdot \infty$ 这样的未定式即可。
 

@@ -16,31 +16,31 @@ Fourier 级数和幂级数理论虽然有相似之处，但它们有一些重要
 
 对于一个 $L\mathbb{Z}$ 周期的函数 $f$，定义为 $F(x)=f(Lx)$ 的函数 $F$ 是 $\mathbb{Z}$ 周期的，因此，只要我们了解了 $\mathbb{Z}$ 周期的函数，我们也就了解了所有周期的函数。对于一个 $\mathbb{Z}$ 周期的函数，我们只需了解它在 $[0,1)$ 上的行为，然后周期延拓至 $\mathbb{R}$ 上即可。
 
-我们把连续的 $\mathbb{Z}$ 周期复值函数构成的集合记作 $C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，我们可以证明，如果 $f,g \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C}),c \in \mathbb{C}$，那么函数 $f+g,cf \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，根据 $\mathbb{C}$ 的代数性质，$C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是一个向量空间。此外，我们还有如下结果：
+我们把连续的 $\mathbb{Z}$ 周期复值函数构成的集合记作 $C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，我们可以证明，如果 $f,g \in C(\mathbb{R} / \mathbb{Z},\mathbb{C}),c \in \mathbb{C}$，那么函数 $f+g,cf \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，根据 $\mathbb{C}$ 的代数性质，$C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是一个向量空间。此外，我们还有如下结果：
 
 **定理 18.1.2**
 
-在 $L^{\infty}$ 度量下，$C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是 $C_{b}(\mathbb{R},\mathbb{C})$ 的完备子空间。
+在 $L^{\infty}$ 度量下，$C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是 $C_{b}(\mathbb{R},\mathbb{C})$ 的完备子空间。
 
 **证明**
 
-设 $f \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，则 $f$ 在 $[0,1]$ 上连续，故在 $[0,1]$ 上有界。由周期性可知 $f$ 在 $\mathbb{R}$ 上有界。
+设 $f \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，则 $f$ 在 $[0,1]$ 上连续，故在 $[0,1]$ 上有界。由周期性可知 $f$ 在 $\mathbb{R}$ 上有界。
 
-现设 $C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 中的序列 $(f_{n})$ 按度量 $d_{\infty}$ 收敛于 $f$，根据一致收敛理论，$f$ 在 $\mathbb{R}$ 上连续，并且有
+现设 $C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 中的序列 $(f_{n})$ 按度量 $d_{\infty}$ 收敛于 $f$，根据一致收敛理论，$f$ 在 $\mathbb{R}$ 上连续，并且有
 
 $$
 f(x+1)=\lim_{ n \to \infty } f_{n}(x+1)=\lim_{ n \to \infty } f_{n}(x)=f(x)
 $$
 
-即 $f \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，因此 $C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是闭集。
+即 $f \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，因此 $C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是闭集。
 
-由于 $C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是 $C_{b}(\mathbb{R},\mathbb{C})$ 的子空间，而后者是完备的，故 $C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是完备的，这就完成了证明。
+由于 $C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是 $C_{b}(\mathbb{R},\mathbb{C})$ 的子空间，而后者是完备的，故 $C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是完备的，这就完成了证明。
 
-在 $C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 上，不仅有向量空间结构，还可以定义内积：
+在 $C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 上，不仅有向量空间结构，还可以定义内积：
 
 **定义 18.1.3** 内积（inner product）
 
-定义 $C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 上的**内积**为
+定义 $C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 上的**内积**为
 
 $$
 \langle f,g \rangle =\int_{0}^{1}f(x)\overline{g(x)}\mathrm{d} x
@@ -52,13 +52,13 @@ $$
 \int_{a}^{b}f=\int_{a}^{b}r+i \int_{a}^{b}s
 $$
 
-根据 Riemann 积分的线性性，我们有 $\langle af+bg,h \rangle=a\langle f,h \rangle+b\langle g,h \rangle$，并且有 $\langle f,g \rangle=\overline{\langle g,f \rangle}$，还满足正定性：$\langle f,f \rangle>0,f\neq 0;\langle 0,0 \rangle=0$. 因此，$C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是一个内积空间。
+根据 Riemann 积分的线性性，我们有 $\langle af+bg,h \rangle=a\langle f,h \rangle+b\langle g,h \rangle$，并且有 $\langle f,g \rangle=\overline{\langle g,f \rangle}$，还满足正定性：$\langle f,f \rangle>0,f\neq 0;\langle 0,0 \rangle=0$. 因此，$C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是一个内积空间。
 
 根据内积空间的理论，我们可以定义：
 
 **定义 18.1.4** $L^{2}$ 范数，$L^{2}$ 度量
 
-定义 $C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 上的 $L^{2}$ **范数**为
+定义 $C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 上的 $L^{2}$ **范数**为
 
 $$
 \lVert f \rVert _{2}=\sqrt{ \langle f,f \rangle  }=\left( \int_{0}^{1}|f(x)|^{2}\mathrm{d} x \right)^{1/2}
@@ -70,13 +70,13 @@ $$
 d_{L^{2}}(f,g)=\lVert f-g \rVert _{2}=\left( \int_{0}^{1}|f(x)-g(x)|^{2}\mathrm{d} x \right)^{1/2}
 $$
 
-则 $(C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C}),d_{L^{2}})$ 构成了一个度量空间。$L^{2}$ 度量与 $\mathbb{R}^{n}$ 上的 $l^{2}$ 度量非常相似，这解释了它们符号的相似性。
+则 $(C(\mathbb{R} / \mathbb{Z},\mathbb{C}),d_{L^{2}})$ 构成了一个度量空间。$L^{2}$ 度量与 $\mathbb{R}^{n}$ 上的 $l^{2}$ 度量非常相似，这解释了它们符号的相似性。
 
-利用 $L^{2}$ 度量，我们就有了一种不同于逐点收敛与一致收敛（按 $L^{\infty}$ 度量收敛）的收敛方式：$L^{2}$ 收敛。$L^{2}$ 度量的行为并不如 $L^{\infty}$ 度量的好，比如 $C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 在 $L^{2}$ 度量下不是完备的，而在 $L^{\infty}$ 度量下是完备的（定理 18.1.2），但这也使得它能够应用于更广泛的函数类。
+利用 $L^{2}$ 度量，我们就有了一种不同于逐点收敛与一致收敛（按 $L^{\infty}$ 度量收敛）的收敛方式：$L^{2}$ 收敛。$L^{2}$ 度量的行为并不如 $L^{\infty}$ 度量的好，比如 $C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 在 $L^{2}$ 度量下不是完备的，而在 $L^{\infty}$ 度量下是完备的（定理 18.1.2），但这也使得它能够应用于更广泛的函数类。
 
 # Section 2: 三角多项式
 
-既然 $C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是一个内积空间，那么它一定有一个基，我们还希望它是规范正交的，这样我们就可以使用公式
+既然 $C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是一个内积空间，那么它一定有一个基，我们还希望它是规范正交的，这样我们就可以使用公式
 
 $$
 c_{n}=\langle f,e_{n} \rangle 
@@ -86,7 +86,7 @@ $$
 
 **定义 18.2.1** 特征（characteristic）
 
-对任意整数 $n$，令 $e_{n}\in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 表示函数
+对任意整数 $n$，令 $e_{n}\in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 表示函数
 
 $$
 e_{n}(x)=e^{2\pi i n x}
@@ -118,7 +118,7 @@ $$
 
 **定义 18.2.3** 三角多项式（trigonometric polynomial）
 
-设 $f \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，如果存在整数 $N\geq 0$ 和复数序列 $(c_{n})_{n=-N}^{N}$ 使得
+设 $f \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，如果存在整数 $N\geq 0$ 和复数序列 $(c_{n})_{n=-N}^{N}$ 使得
 
 $$
 f=\sum_{n=-N}^{N} c_{n}e_{n}
@@ -138,7 +138,7 @@ $$
 
 **定义 18.2.4** Fourier 变换
 
-设 $f \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，对任意整数 $n$，定义第 $n$ 个 **Fourier 系数**为
+设 $f \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，对任意整数 $n$，定义第 $n$ 个 **Fourier 系数**为
 
 $$
 \hat{f}(n)=\langle f,e_{n} \rangle =\int_{0}^{1}f(x)e^{-2\pi inx}\mathrm{d} x
@@ -158,13 +158,13 @@ $$
 \lVert f \rVert _{2}^{2}=\sum_{n=-N}^{N} |\hat{f}(n)|^{2}=\sum_{n=-\infty}^{\infty} |\hat{f}(n)|^{2}
 $$
 
-因为对于整数 $|n|>N$，$\hat{f}(n)=0$. 下面，我们要把这两个公式推广到任意 $f \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 上，而不仅仅是三角多项式上。为此，我们将使用周期函数的 Weierstrass 逼近定理，即我们不是用多项式逼近连续函数，而是使用三角多项式来逼近连续周期函数。与多项式的 Weierstrass 逼近定理一样，我们也需要在周期函数上定义**卷积**的概念。
+因为对于整数 $|n|>N$，$\hat{f}(n)=0$. 下面，我们要把这两个公式推广到任意 $f \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 上，而不仅仅是三角多项式上。为此，我们将使用周期函数的 Weierstrass 逼近定理，即我们不是用多项式逼近连续函数，而是使用三角多项式来逼近连续周期函数。与多项式的 Weierstrass 逼近定理一样，我们也需要在周期函数上定义**卷积**的概念。
 
 # Section 3: Fourier 定理
 
 **定义 18.3.1** 周期卷积（periodic convolution）
 
-设 $f,g \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，定义其**周期卷积** $f*g\colon \mathbb{R}\to \mathbb{C}$ 为
+设 $f,g \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，定义其**周期卷积** $f*g\colon \mathbb{R}\to \mathbb{C}$ 为
 
 $$
 f*g(x)=\int_{0}^{1}f(y)g(x-y)\mathrm{d} y
@@ -176,9 +176,9 @@ $$
 
 **定理 18.3.2**
 
-设 $f,g,h \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，则有
+设 $f,g,h \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，则有
 
-1. $f*g \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$
+1. $f*g \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$
 2. 交换性：$f*g=g*f$
 3. 线性性：$f*(g+h)=f*g+f*h,f*(cg)=c(f*g)$
 4. $f*e_{n}=\hat{f}(n)e_{n}$
@@ -219,7 +219,7 @@ $$
 
 **定义 18.3.3** 周期恒等逼近（periodic approximation to the identity）
 
-设 $\varepsilon>0,0<\delta<\dfrac{1}{2}$，称函数 $f\in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是一个**周期** $(\varepsilon,\delta)$ **恒等逼近**，如果满足：
+设 $\varepsilon>0,0<\delta<\dfrac{1}{2}$，称函数 $f\in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是一个**周期** $(\varepsilon,\delta)$ **恒等逼近**，如果满足：
 
 1. 对任意 $x \in \mathbb{R}$ 有 $f(x)\geq 0$，并且 $\int_{0}^{1}f=1$
 2. 对任意 $\delta<|x|<1-\delta$，有 $f(x)<\varepsilon$
@@ -276,11 +276,11 @@ $$
 
 **定理 18.3.5** Weierstrass 逼近定理
 
-设 $f\in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，则对任意 $\varepsilon>0$，存在三角多项式 $p$，使得 $\lVert f-p \rVert_{\infty}<\varepsilon$.
+设 $f\in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，则对任意 $\varepsilon>0$，存在三角多项式 $p$，使得 $\lVert f-p \rVert_{\infty}<\varepsilon$.
 
 **证明**
 
-设 $f\in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，则 $f$ 一致连续且有界，从而存在 $M>0$ 使得对任意 $x \in \mathbb{R}$ 有 $|f(x)|\leq M$，并且对任意 $\varepsilon>0$，存在 $0<\delta< \dfrac{1}{2}$ 使得对任意满足 $|x'-x''|<\delta$ 的 $x',x''\in \mathbb{R}$ 有 $|f(x')-f(x'')|<\varepsilon$.
+设 $f\in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，则 $f$ 一致连续且有界，从而存在 $M>0$ 使得对任意 $x \in \mathbb{R}$ 有 $|f(x)|\leq M$，并且对任意 $\varepsilon>0$，存在 $0<\delta< \dfrac{1}{2}$ 使得对任意满足 $|x'-x''|<\delta$ 的 $x',x''\in \mathbb{R}$ 有 $|f(x')-f(x'')|<\varepsilon$.
 
 根据引理 18.3.4，我们可以找到一个三角多项式 $p$ 使其为周期 $(\varepsilon,\delta)$ 恒等逼近，那么 $f*p$ 也是一个三角多项式，现在我们来计算 $\lVert f-f*p \rVert_{\infty}$.
 
@@ -318,7 +318,7 @@ $$
 
 **定理 18.3.6** Fourier 定理
 
-对任意 $f \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，**Fourier 级数** $\sum_{n=-\infty}^{\infty}\hat{f}(n)e_{n}$ 按 $L^{2}$ 度量收敛于 $f$，即
+对任意 $f \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，**Fourier 级数** $\sum_{n=-\infty}^{\infty}\hat{f}(n)e_{n}$ 按 $L^{2}$ 度量收敛于 $f$，即
 
 $$
 \lim_{ N \to \infty } \left\lVert  f-\sum_{n=-N}^{N} \hat{f}(n)e_{n}  \right\rVert _{2}=0
@@ -346,7 +346,7 @@ $$
 
 **定理 18.3.7**
 
-对任意 $f \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，如果级数 $\sum_{n=-\infty}^{\infty}|\hat{f}(n)|$ 收敛，那么 Fourier 级数 $\sum_{n=-\infty}^{\infty}\hat{f}(n)e_{n}$ 一致收敛于 $f$，即
+对任意 $f \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，如果级数 $\sum_{n=-\infty}^{\infty}|\hat{f}(n)|$ 收敛，那么 Fourier 级数 $\sum_{n=-\infty}^{\infty}\hat{f}(n)e_{n}$ 一致收敛于 $f$，即
 
 $$
 \lim_{ N \to \infty } \left\lVert  f-\sum_{n=-N}^{N} \hat{f}(n)e_{n}  \right\rVert _{\infty}=0
@@ -372,7 +372,7 @@ $$
 
 **定理 18.3.8** Plancherel 定理
 
-对任意 $f \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，级数 $\sum_{n=-\infty}^{\infty}|\hat{f}(n)|^{2}$ 收敛，并且
+对任意 $f \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，级数 $\sum_{n=-\infty}^{\infty}|\hat{f}(n)|^{2}$ 收敛，并且
 
 $$
 \lVert f \rVert _{2}^{2}=\sum_{n=-\infty}^{\infty} |\hat{f}(n)|^{2}
@@ -410,7 +410,7 @@ $$
 
 **定理 18.3.9** Parseval 恒等式
 
-对任意 $f,g \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，级数 $\sum_{n=-\infty}^{\infty}\hat{f}(n)\overline{\hat{g}(n)}$ 收敛，并且
+对任意 $f,g \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，级数 $\sum_{n=-\infty}^{\infty}\hat{f}(n)\overline{\hat{g}(n)}$ 收敛，并且
 
 $$
 \langle f,g \rangle =\int_{0}^{1}f(x)\overline{g(x)}\mathrm{d} x=\sum_{n=-\infty}^{\infty} \hat{f}(n)\overline{\hat{g}(n)}
@@ -418,7 +418,7 @@ $$
 
 **证明**
 
-我们有 $f+g,f-g,f+ig,f-ig \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，对其应用 Plancherel 定理，则有
+我们有 $f+g,f-g,f+ig,f-ig \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，对其应用 Plancherel 定理，则有
 
 $$
 \begin{align}
@@ -435,7 +435,7 @@ $$
 
 **定理 18.3.10**
 
-设 $f \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是可微的，其导函数 $f'$ 连续，那么 $f'\in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，并且 $\mathcal{F}[f'](n)=2\pi i n \hat{f}(n)$.
+设 $f \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$ 是可微的，其导函数 $f'$ 连续，那么 $f'\in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，并且 $\mathcal{F}[f'](n)=2\pi i n \hat{f}(n)$.
 
 **证明**
 
@@ -445,7 +445,7 @@ $$
 f'(x+1)=\lim_{ y \to x+1 } \dfrac{f(y)-f(x+1)}{y-(x+1)}=\lim_{ y \to x } \dfrac{f(y+1)-f(x+1)}{y-x}=f'(x)
 $$
 
-故 $f' \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，并且有
+故 $f' \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，并且有
 
 $$
 \begin{align}
@@ -459,7 +459,7 @@ $$
 
 **定理 18.3.11**
 
-设 $f,g \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，则对任意整数 $n$ 有
+设 $f,g \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，则对任意整数 $n$ 有
 
 $$
 \mathcal{F}[f*g](n)=\hat{f}(n)\hat{g}(n)
@@ -510,7 +510,7 @@ $$
 
 **定理 18.3.12**
 
-设 $f \in C^{0}(\mathbb{R} / \mathbb{Z},\mathbb{C})$，定义**三角 Fourier 系数**为
+设 $f \in C(\mathbb{R} / \mathbb{Z},\mathbb{C})$，定义**三角 Fourier 系数**为
 
 $$
 a_{n}=2 \int_{0}^{1}f(x)\cos(2\pi nx)\mathrm{d} x,b_{n}=2 \int_{0}^{1}f(x)\sin(2\pi nx)\mathrm{d} x
@@ -566,21 +566,21 @@ $$
 
 # Section 4: 任意周期的 Fourier 级数
 
-最后，我们将对 $L\mathbb{Z}$ 周期的函数建立 Fourier 级数理论。设 $L>0$，定义 $C^{0}(\mathbb{R} / L\mathbb{Z},\mathbb{C})$ 为所有 $L\mathbb{Z}$ 周期的连续复值函数构成的空间，在其上可以定义内积：
+最后，我们将对 $L\mathbb{Z}$ 周期的函数建立 Fourier 级数理论。设 $L>0$，定义 $C(\mathbb{R} / L\mathbb{Z},\mathbb{C})$ 为所有 $L\mathbb{Z}$ 周期的连续复值函数构成的空间，在其上可以定义内积：
 
 **定义 18.4.1** 内积
 
-定义 $C^{0}(\mathbb{R} / L\mathbb{Z},\mathbb{C})$ 上的**内积**为
+定义 $C(\mathbb{R} / L\mathbb{Z},\mathbb{C})$ 上的**内积**为
 
 $$
 \langle f,g \rangle =\dfrac{1}{L} \int_{0}^{L}f(x)\overline{g(x)}\mathrm{d} x
 $$
 
-下面我们定义特征：$C^{0}(\mathbb{R} / L\mathbb{Z},\mathbb{C})$ 上的规范正交基。
+下面我们定义特征：$C(\mathbb{R} / L\mathbb{Z},\mathbb{C})$ 上的规范正交基。
 
 **定义 18.4.2** 特征
 
-对任意整数 $n$，令 $e_{n}\in C^{0}(\mathbb{R} / L\mathbb{Z},\mathbb{C})$ 表示函数
+对任意整数 $n$，令 $e_{n}\in C(\mathbb{R} / L\mathbb{Z},\mathbb{C})$ 表示函数
 
 $$
 e_{n}(x)=e^{2\pi i n x / L}
@@ -590,7 +590,7 @@ $$
 
 **定义 18.4.3** Fourier 变换
 
-设 $f \in C^{0}(\mathbb{R} / L\mathbb{Z},\mathbb{C})$，对任意整数 $n$，定义第 $n$ 个 **Fourier 系数**为
+设 $f \in C(\mathbb{R} / L\mathbb{Z},\mathbb{C})$，对任意整数 $n$，定义第 $n$ 个 **Fourier 系数**为
 
 $$
 \hat{f}(n)=\langle f,e_{n} \rangle
@@ -598,11 +598,11 @@ $$
 
 函数 $\hat{f}\colon \mathbb{Z}\to \mathbb{C}$ 称为 $f$ 的 **Fourier 变换**，记作 $\mathcal{F}[f]$.
 
-接下来，我们给出本章的两个主要定理（Fourier 定理和 Plancherel 定理）在 $C^{0}(\mathbb{R} / L\mathbb{Z},\mathbb{C})$ 上的对应。
+接下来，我们给出本章的两个主要定理（Fourier 定理和 Plancherel 定理）在 $C(\mathbb{R} / L\mathbb{Z},\mathbb{C})$ 上的对应。
 
 **定理 18.4.4** Fourier 定理
 
-对任意 $f \in C^{0}(\mathbb{R} / L\mathbb{Z},\mathbb{C})$，**Fourier 级数** $\sum_{n=-\infty}^{\infty}\hat{f}(n)e_{n}$ 按 $L^{2}$ 度量收敛于 $f$，即
+对任意 $f \in C(\mathbb{R} / L\mathbb{Z},\mathbb{C})$，**Fourier 级数** $\sum_{n=-\infty}^{\infty}\hat{f}(n)e_{n}$ 按 $L^{2}$ 度量收敛于 $f$，即
 
 $$
 \lim_{ N \to \infty } \left\lVert  f-\sum_{n=-N}^{N} \hat{f}(n)e_{n}  \right\rVert _{2}=0
@@ -634,7 +634,7 @@ $$
 
 **定理 18.4.5** Plancherel 定理
 
-对任意 $f \in C^{0}(\mathbb{R} / L\mathbb{Z},\mathbb{C})$，级数 $\sum_{n=-\infty}^{\infty}|\hat{f}(n)|^{2}$ 收敛，并且
+对任意 $f \in C(\mathbb{R} / L\mathbb{Z},\mathbb{C})$，级数 $\sum_{n=-\infty}^{\infty}|\hat{f}(n)|^{2}$ 收敛，并且
 
 $$
 \lVert f \rVert _{2}^{2}=\sum_{n=-\infty}^{\infty} |\hat{f}(n)|^{2}
