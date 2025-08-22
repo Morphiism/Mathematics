@@ -445,3 +445,183 @@ $$
 $$
 
 Jensen 不等式就可以看作是上述不等式的连续版本，它的一个更广义的版本的证明我们放在附录中。
+
+# Section 4: 独立性
+
+下面我们将给出第一个在概率论中特有的概念：独立性，它与乘积测度的关联非常紧密。
+
+**定义 1.4.1** 独立的（independent）
+
+设 $(\Omega,\mathcal{F},\mathbb{P})$ 是概率空间，称随机变量 $X_{1},\dots,X_{n}$ 是**独立的**，如果对任意 Borel 集 $B_{1},\dots,B_{n}$ 有
+
+$$
+\mathbb{P}\left( \bigcap_{j=1}^{n} X_{j}^{-1}[B_{j}] \right)=\prod_{j=1}^{n} \mathbb{P}(X_{j}^{-1}[B_{j}])
+$$
+
+称一族随机变量 $\{ X_{\alpha} \mid \alpha \in A \}$ 是独立的，如果其中任意有限个随机变量是独立的。
+
+独立性与乘积测度的关联如下：设 $X_{j}$ 诱导了概率空间 $(\mathbb{R},\mathcal{B}_{\mathbb{R}},\mu_{j})$，随机向量 $(X_{1},\dots,X_{n})$ 诱导了概率空间 $(\mathbb{R}^{n},\mathcal{B}_{\mathbb{R}^{n}},\mu)$，那么就有
+
+$$
+\mu\left( \prod_{j=1}^{n} B_{j} \right)=\prod_{j=1}^{n} \mu_{j}(B_{j})
+$$
+
+根据 $\mu$ 的有限性以及 Caratheodory 扩张定理，我们就有
+
+$$
+\mu=\mu_{1}\times\dots \times \mu_{n}
+$$
+
+此时我们可以给出 $n$ 维的**联合分布函数**
+
+$$
+F(x_{1},\dots,x_{n})=\mathbb{P}\left( \bigcap_{j=1}^{n} \{ X_{j}\leq x_{j} \} \right)=\mu\left( \prod_{j=1}^{n} (-\infty,x_{j}] \right)=\prod_{j=1}^{n} F_{j}(x_{j})
+$$
+
+对于**事件**，也就是可测集，我们也可以定义独立性：
+
+**定义 1.4.2** 独立事件（independent event）
+
+设 $(\Omega,\mathcal{F},\mathbb{P})$ 是概率空间，称事件 $E_{1},\dots,E_{n}$ 是**独立的**，如果随机变量 $1_{E_{1}},\dots,1_{E_{n}}$ 是独立的，即对任意 $\{ j_{1},\dots,j_{m} \}\subset \{ 1,\dots,n \}$，有
+
+$$
+\mathbb{P}\left( \bigcap_{k=1}^{m} E_{j_{k}} \right)=\prod_{k=1}^{m} \mathbb{P}(E_{j_{k}})
+$$
+
+**定理 1.4.3**
+
+设 $(\Omega,\mathcal{F},\mathbb{P})$ 是概率空间，如果 $X_{1},\dots,X_{n}$ 是独立随机变量，$f_{1},\dots,f_{n}$ 是 Borel 可测函数，那么 $f_{1}(X_{1}),\dots,f_{n}(X_{n})$ 是独立的随机变量。
+
+**证明**
+
+根据可测性，$f_{j}(X_{j})$ 是随机变量，并且对任意 Borel 集 $B$，$f_{j}^{-1}[B]$ 也是 Borel 集，从而有
+
+$$
+\mathbb{P}\left( \bigcap_{j=1}^{n} X_{j}^{-1}[f_{j}^{-1}[B_{j}]] \right)=\prod_{j=1}^{n} \mathbb{P}(X_{j}^{-1}[f_{j}^{-1}[B_{j}]])
+$$
+
+即 $f_{1}(X_{1}),\dots,f_{n}(X_{n})$ 是独立的。
+
+下面的定理是 1.4.3 的自然推论，其证明是类似的。
+
+**定理 1.4.4**
+
+设 $(\Omega,\mathcal{F},\mathbb{P})$ 是概率空间，$1\leq n_{1}<\dots<n_{k}=n$，$f_{1},\dots,f_{k}$ 是 Borel 可测函数，随机变量 $X_{1},\dots,X_{n}$ 独立，则随机变量
+
+$$
+f_{1}(X_{1},\dots,X_{n_{1}}),f_{2}(X_{n_{1}+1},\dots,X_{n_{2}}),\dots,f_{k}(X_{n_{k-1}+1},\dots,X_{n_{k}})
+$$
+
+是独立的。
+
+下面我们来考虑独立随机变量与期望的关系，我们有：
+
+**定理 1.4.5**
+
+设 $(\Omega,\mathcal{F},\mathbb{P})$ 是概率空间，$X,Y$ 是独立的随机变量，并且 $\mathbb{E}(X),\mathbb{E}(Y)$ 均有限，则有
+
+$$
+\mathbb{E}(XY)=\mathbb{E}(X)\mathbb{E}(Y)
+$$
+
+**证明**
+
+由于 $\mathbb{E}(X)=\mathbb{E}(X^{+})-\mathbb{E}(X^{-})$ 有限，故 $X \in L^{1}(\mathbb{P})$，同理 $Y \in L^{1}(\mathbb{P})$，因此根据 Fubini 定理就有
+
+$$
+\mathbb{E}(XY)=\int_{\mathbb{R}^{2}}xy\mathrm{d} (\mu_{1}\times \mu_{2})=\int_{\mathbb{R}}x\mathrm{d} \mu_{1}\int_{\mathbb{R}}y\mathrm{d} \mu_{2}=\mathbb{E}(X)\mathbb{E}(Y)
+$$
+
+这就完成了证明。
+
+根据归纳法以及定理 1.4.4，对于独立且可积的随机变量 $X_{1},\dots,X_{n}$，我们立刻得到
+
+$$
+\mathbb{E}\left( \prod_{j=1}^{n} X_{j} \right)=\prod_{j=1}^{n} \mathbb{E}(X_{j})
+$$
+
+独立的随机变量是否存在？这个问题本质上来说等同于“乘积测度是否存在”，因此，我们将使用 Caratheodory 扩张定理来完成这一构造。
+
+**定理 1.4.6**
+
+设 $(\mu_{j})_{j=1}^{\infty}$ 是 $(\mathbb{R},\mathcal{B}_{\mathbb{R}})$ 上的一列概率测度，则存在一个概率空间 $(\Omega,\mathcal{F},\mathbb{P})$ 和一列独立的随机变量 $(X_{j})_{j=1}^{\infty}$ 使得 $\mu_{j}$ 是 $X_{j}$ 的概率分布测度。
+
+**证明**
+
+如果我们取 $(\Omega_{j},\mathcal{F}_{j},\mathbb{P}_{j})$ 为 $(\mathbb{R},\mathcal{B}_{\mathbb{R}},\mu_{j})$，并取 $X_{j}$ 为恒等函数，那么 $\mu_{j}$ 就是 $X_{j}$ 的概率分布测度，现在我们只需证明 $\prod_{j=1}^{\infty}\mu_{j}$ 的存在性即可。
+
+设 $\Omega=\prod_{j=1}^{\infty}\mathbb{R}$，$\mathcal{F}=\bigotimes_{j=1}^{\infty}\mathcal{B}_{\mathbb{R}}$，对任意 $B_{j_{1}},\dots,B_{j_{n}}\in \mathcal{B}_{\mathbb{R}}$，定义
+
+$$
+\mu\left( \bigcap_{k=1}^{n} \pi_{j_{k}}^{-1}[B_{j_{k}}] \right)=\prod_{k=1}^{n} \mu_{j_{k}}(B_{j_{k}})
+$$
+
+设 $\mathcal{A}$ 是 $\pi_{j}^{-1}[B_{j}]$ 的有限交构成的代数，我们要验证 $\mu$ 是 $\mathcal{A}$ 上的预测度，进而可以将 $\mu$ 扩张到 $\mathcal{F}$ 上。
+
+设 $\{ A_{k} \}_{k=1}^{\infty}\subset \mathcal{A},A=\bigcup_{k=1}^{\infty}A_{k}\in \mathcal{A}$，即 $A$ 是有限个 $\pi_{j}^{-1}[B_{j}]$ 的交，从而存在 $N\geq 1$ 使得
+
+$$
+A=\prod_{j=1}^{N} C_{j} \times \prod_{j=N+1}^{\infty} \mathbb{R}
+$$
+
+因此每个 $A_{k}$ 也具有上述形式，于是我们可以将其投影到 $\mathbb{R}^{N}$ 上，有限维空间上的乘积测度 $\mu_{1}\times\dots \times \mu_{N}$ 的存在性是显然的，因此有
+
+$$
+\mu(A)=(\mu_{1}\times \dots \times \mu_{N})(\pi(A))=\sum_{k=1}^{\infty} (\mu_{1}\times\dots \times \mu_{N})(\pi(A_{k}))=\sum_{k=1}^{\infty} \mu(A_{k})
+$$
+
+从而 $\mu$ 是 $\mathcal{A}$ 上的预测度，应用 Caratheodory 扩张定理，存在唯一的概率测度 $\mathbb{P}$ 使得 $\mathbb{P}=\prod_{j=1}^{\infty}\mu_{j}$.
+
+对每个 $(\mathbb{R},\mathcal{B}_{\mathbb{R}},\mu_{j})$ 上的随机变量 $X_{j}$，定义 $(\Omega,\mathcal{F},\mathbb{P})$ 上的随机变量 $\tilde{X}_{j}$ 如下：
+
+$$
+\tilde{X}_{j}(\omega)=X_{j}(\omega_{j})
+$$
+
+则根据 $\mathbb{P}=\prod_{j=1}^{\infty}\mu_{j}$ 可得对任意 $B_{j_{1}},\dots,B_{j_{n}}\in \mathcal{B}_{\mathbb{R}}$ 有
+
+$$
+\mathbb{P}\left( \bigcap_{k=1}^{n} \tilde{X}_{j_{k}}^{-1}[B_{j_{k}}] \right)=\prod_{k=1}^{n} \mu_{j_{k}}(B_{j_{k}})=\prod_{k=1}^{n} \mathbb{P}(\tilde{X}_{j_{k}}^{-1}[B_{j_{k}}])
+$$
+
+即 $(\tilde{X}_{j})_{j=1}^{\infty}$ 是独立的，这就完成了证明。
+
+上述定理实际上是一个更广义的定理，即 Kolmogorov 扩张定理的特例，这个定理是概率论中的一个基本定理，它指出：只要我们确定了有限维上的联合分布，并且这些分布满足一定条件，那么就存在一个概率空间（可以是无限维的），使得它的有限维分布恰好是给定的那些。
+
+**定理 1.4.7** Kolmogorov 扩张定理（Kolmogorov extension theorem）
+
+对任意 $n\geq 1$，设 $\{ \mu_{t_{1},\dots,t_{n}} \},t_{j}\in T$ 是 $(\mathbb{R}^{n},\mathcal{B}_{\mathbb{R}^{n}})$ 上的一族概率测度，满足相容性条件：对任意 $1\leq m<n$ 和 $B_{1},\dots,B_{m}\in \mathcal{B}_{\mathbb{R}}$ 有
+
+$$
+\mu_{t_{1},\dots,t_{m}}(B_{1}\times\dots \times B_{m})=\mu_{t_{1},\dots,t_{n}}(B_{1}\times\dots \times B_{m}\times \mathbb{R}^{n-m})
+$$
+
+以及对任意排列 $\sigma \in S_{n}$ 有
+
+$$
+\mu_{t_{\sigma(1)},\dots,t_{\sigma(n)}}(B_{\sigma(1)}\times\dots \times B_{\sigma(n)})=\mu_{t_{1},\dots,t_{n}}(B_{1},\dots,B_{n})
+$$
+
+则存在概率空间 $(\Omega,\mathcal{F},\mathbb{P})$ 和一族随机变量 $\{ X_{t} \}_{t \in T}$ 使得对任意 $n\geq 1$ 和 $t_{j}\in T$，随机向量 $(X_{t_{1}},\dots,X_{t_{n}})$ 的概率分布测度是 $\mu_{t_{1},\dots,t_{n}}$.
+
+**证明**
+
+我们的证明思路与 1.4.6 是一样的：首先在有限个 $\pi_{t_{j}}^{-1}[B_{t_{j}}]$ 的交构成的代数上定义预测度，其证明过程是利用有限性将集合投影到一个有限维空间上，然后利用已有的有限维分布证明可数可加性，最后再应用 Caratheodory 扩张定理即可。
+
+令 $\Omega=\mathbb{R}^{T},\mathcal{F}=\bigotimes_{t \in T}\mathcal{B}_{\mathbb{R}}$，设 $\mathcal{A}$ 是 $\pi_{t_{j}}^{-1}[B_{t_{j}}]$ 的有限交构成的代数，定义
+
+$$
+\mu\left( \bigcap_{j=1}^{k} \pi_{t_{j}}^{-1}[B_{t_{j}}] \right)=\mu_{t_{1},\dots,t_{k}}(B_{t_{1}}\times\dots \times B_{t_{k}})
+$$
+
+根据相容性条件，上述定义不依赖于集合的表示，因而是良定义的。
+
+设不相交的集合 $\{ A_{k} \}\subset \mathcal{A},A=\bigcup_{j=1}^{\infty}A_{j}\in \mathcal{A}$，由于 $A$ 是 $\pi_{t_{j}}^{-1}[B_{t_{j}}]$ 的有限交，因此存在 $N\geq 1$ 使得 $A$ 在分量 $t_{1},\dots,t_{N}$ 以外的方向上的投影均为 $\mathbb{R}$，又由于 $A_{k}\subset A$，故 $A_{k}$ 在这些分量以外的方向上的投影也都为 $\mathbb{R}$，令 $\pi(A)=A_{t_{1}}\times\dots \times A_{t_{N}}$，由于 $\mu_{t_{1},\dots,t_{N}}$ 是一个概率测度，故有
+
+$$
+\mu(A)=\mu_{t_{1},\dots,t_{N}}(\pi(A))=\sum_{k=1}^{\infty} \mu_{t_{1},\dots,t_{N}}(\pi(A_{k}))=\sum_{k=1}^{\infty} \mu(A_{k})
+$$
+
+因此 $\mu$ 是 $\mathcal{A}$ 上的预测度，从而由 Caratheodory 扩张定理知存在概率测度 $\mathbb{P}$ 使得 $\mathbb{P}|_{\mathcal{A}}=\mu$，设 $X_{t}(\omega)=\omega_{t}$，则 $(X_{t_{1}},\dots,X_{t_{n}})$ 的概率分布测度即为 $\mu_{t_{1},\dots,t_{n}}$，这就完成了证明。
+
+注意，上述定理中的指标集 $T$ 不一定是可数的，它也可以是 $[0,+\infty)$ 之类的不可数集，它使得我们可以通过有限维上（局部）的分布来构造全局的对象。
