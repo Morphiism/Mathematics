@@ -486,7 +486,7 @@ Weierstrass 逼近定理的证明比较复杂，因此我们把它放在附录�
 
 **定义 16.6.3** 支撑（support）
 
-称函数 $f\colon \mathbb{R}\to \mathbb{R}$ **支撑在** $X\subset \mathbb{R}$ **上**，如果对任意 $x \in \mathbb{R}\setminus X$ 有 $f(x)=0$. 称函数 $f$ 是**紧支撑的**，如果它支撑在某个区间 $[a,b]$ 上。
+称函数 $f\colon \mathbb{R}\to \mathbb{R}$ **支撑在** $[a,b]\subset \mathbb{R}$ **上**，如果对任意 $x \in \mathbb{R}\setminus [a,b]$ 有 $f(x)=0$. 称函数 $f$ 是**紧支撑的**，如果它支撑在某个区间 $[a,b]$ 上。
 
 当 $f$ 连续且支撑在 $[a,b]$ 上时，我们可以定义
 
