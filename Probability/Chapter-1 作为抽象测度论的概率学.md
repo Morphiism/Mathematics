@@ -136,11 +136,11 @@ $$
 
 # Section 2: 概率空间
 
-在概率论中，我们使用的术语有时候会与测度论中不同：例如，在概率论中我们通常将代数称为**域**，$\sigma$-代数称为 $\sigma$**-域**或者 **Borel 域**。其它还有一些术语的变化我们会在合适的时候介绍。
+在概率论中，我们使用的术语有时候会与测度论中不同：例如，在概率论中我们通常将代数称为**域**，$\sigma$-代数称为 $\sigma$**-域**。其它还有一些术语的变化我们会在合适的时候介绍。
 
 **定义 1.2.1** 概率空间（probability space）
 
-**概率空间** $(\Omega,\mathcal{F},\mathbb{P})$ 包含集合 $\Omega$，称为**样本空间**，其元素称为**样本点**，和 Borel 域 $\mathcal{F}$，称为**事件域**，以及**概率测度** $\mathbb{P}\colon \mathcal{F}\to[0,1]$ 满足：
+**概率空间** $(\Omega,\mathcal{F},\mathbb{P})$ 包含集合 $\Omega$，称为**样本空间**，其元素称为**样本点**，和 $\sigma$-域 $\mathcal{F}$，称为**事件域**，以及**概率测度** $\mathbb{P}\colon \mathcal{F}\to[0,1]$ 满足：
 
 1. 设 $(E_{n})_{n=0}^{\infty}$ 是 $\mathcal{F}$ 中不相交的集合，则 $\mathbb{P}\left( \bigcup_{n=0}^{\infty}E_{n} \right)=\sum_{n=0}^{\infty}\mathbb{P}(E_{n})$
 2. $\mathbb{P}(\Omega)=1$
@@ -393,7 +393,7 @@ $$
 当 $r=1,a=0$ 时，$\mathbb{E}((X-a)^{r})$ 就退化为期望 $\mathbb{E}(X)$，也称为 $X$ 的**均值**，关于均值的矩称为**中心矩**。二阶的中心矩 $\mathbb{E}((X-\mathbb{E}(X))^{2})$ 称为 $X$ 的**方差**，记作 $\mathrm{var}(X)$，其平方根称为**标准差**，记作 $\sigma(X)$，并且我们有
 
 $$
-\mathrm{var}(X)=\sigma^{2}(X)=\mathbb{E}((X-\mathbb{E}(x))^{2})=\mathbb{E}(X^{2})-\mathbb{E}(X)^{2}
+\mathrm{var}(X)=\sigma^{2}(X)=\mathbb{E}((X-\mathbb{E}(X))^{2})=\mathbb{E}(X^{2})-\mathbb{E}(X)^{2}
 $$
 
 因此有 $\sigma^{2}(X)\leq \mathbb{E}(X^{2})$，这个不等式之后将会用到。设实数 $p>0$，所有满足 $\mathbb{E}(|X|^{p})<+\infty$ 的复值随机变量构成的集合记作 $L^{p}(\Omega,\mathbb{P})$.
