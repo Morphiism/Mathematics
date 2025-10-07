@@ -586,7 +586,7 @@ $$
 
 **定理 27.4.6**
 
-设 $\mathcal{X},\mathcal{Y}$ 是 Banach 空间，$(T_{n})_{n=1}^{\infty}\subset L(\mathcal{X},\mathcal{Y})$，$\sup_{n}\lVert T_{n} \rVert<+\infty$，并且 $T \in L(\mathcal{X},\mathcal{Y})$，如果在稠密集 $D\subset \mathcal{X}$ 上有 $\lVert T_{n}x-Tx \rVert\to 0$，那么 $T_{\alpha}$ 强收敛于 $T$.
+设 $\mathcal{X},\mathcal{Y}$ 是 Banach 空间，$(T_{n})_{n=1}^{\infty}\subset L(\mathcal{X},\mathcal{Y})$，$\sup_{n}\lVert T_{n} \rVert<+\infty$，并且 $T \in L(\mathcal{X},\mathcal{Y})$，如果在稠密集 $D\subset \mathcal{X}$ 上有 $\lVert T_{n}x-Tx \rVert\to 0$，那么 $T_{n}$ 强收敛于 $T$.
 
 **证明**
 

@@ -317,7 +317,7 @@ $$
 
 **定理 1.3.9**
 
-设 $(\Omega,\mathcal{F},\mathbb{P})$ 上的随机变量 $(X,Y)$ 诱导了概率空间 $(\mathbb{R}^{2},\mathcal{B}_{\mathbb{R}^{2}},\mu)$，Borel 可测函数 $f\colon \mathbb{R}\to \mathbb{R}$ 满足 $f\geq 0$ 或者 $f \in L^{1}(\mu)$，则有
+设 $(\Omega,\mathcal{F},\mathbb{P})$ 上的随机变量 $(X,Y)$ 诱导了概率空间 $(\mathbb{R}^{2},\mathcal{B}_{\mathbb{R}^{2}},\mu)$，Borel 可测函数 $f\colon \mathbb{R}^{2}\to \mathbb{R}$ 满足 $f\geq 0$ 或者 $f \in L^{1}(\mu)$，则有
 
 $$
 \int_{\Omega} f(X,Y) \mathrm{d} \mathbb{P}=\int_{\mathbb{R}^{2}} f \mathrm{d} \mu
