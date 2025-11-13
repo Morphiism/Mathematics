@@ -512,7 +512,7 @@ $$
 \underline{A}(E,k)=\bigcup \{ Q \in \mathcal{Q}_{k} \mid Q \subset E \}, \overline{A}(E,k)=\bigcup \{ Q \in \mathcal{Q}_{k} \mid Q\cap E \neq \varnothing \}
 $$
 
-![](images/3.png)
+![](3.png)
 
 $\underline{A}(E,k)$ 和 $\overline{A}(E,k)$ 的体积（或者测度）就是 $2^{-nk}$ 乘以立方体的数量，我们把它记作 $m(\underline{A}(E,k))$ 和 $m(\overline{A}(E,k))$.
 

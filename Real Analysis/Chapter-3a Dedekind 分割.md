@@ -80,7 +80,7 @@ $$
 
 这可以由下图来说明：
 
-![](images/1.png)
+![](Real%20Analysis/images/1.png)
 
 可以验证 $-\alpha$ 是一个分割，且 $\alpha+(-\alpha)=\overline{0}$.
 

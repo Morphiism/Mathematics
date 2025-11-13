@@ -190,7 +190,7 @@ $$
 \phi_{n}=\sum_{k=0}^{2^{2n}-1} k 2^{-n} \chi_{E_{nk}}+2^{n}\chi_{F_{n}}
 $$
 
-![](images/2.png)
+![](Real%20Analysis/images/2.png)
 
 如图所示，显然我们有 $\phi_{n}(x)\leq \phi_{n+1}(x)\leq f(x)$，并且对任意 $f(x)\leq 2^{n}$ 的 $x$ 有 $0\leq f(x)-\phi_{n}(x)\leq 2^{-n}$. 如果 $f(x)$ 是有限的，那么存在 $n$ 使得 $f(x)\leq 2^{n}$，于是 $|f(x)-\phi_{n}(x)|\leq 2^{-n}$，从而 $f(x)=\lim_{ n \to \infty }\phi_{n}(x)$，如果 $f(x)=+\infty$，那么 $\phi_{n}(x)=2^{n}$，从而也有 $f(x)=\lim_{ n \to \infty }\phi_{n}(x)$. 如果 $f$ 在 $Y \subset X$ 上是有界的，那么存在 $n$ 使得对任意 $x \in Y$ 有 $f(x)\leq 2^{n}$，从而 $\phi_{n}$ 一致收敛于 $f$，即证。
 

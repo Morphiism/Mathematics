@@ -294,7 +294,7 @@ $$
 
 因此 $\Phi \circ e=i\circ \phi$，于是 $(\Phi \circ e)[X]=(i\circ \phi)[X]\subset\beta Y$，从而 $\Phi[\beta X]\subset  \overline{\beta Y}=\beta Y$，因此我们有下图交换：
 
-![](images/5.png)
+![](Real%20Analysis/images/5.png)
 
 令 $\tilde{\phi}=i^{-1}\circ(\Phi|_{\beta X})$，则 $\tilde{\phi}\circ e=i^{-1}\circ \Phi \circ e=\phi$，由于 $e[X]$ 在 $\beta X$ 中稠密，因此根据 $\tilde{\phi}$ 的连续性，它是唯一的。如果 $(Y,\phi)$ 是 $X$ 的紧化，那么 $\phi[X]$ 在 $Y$ 中是稠密的，从而 $\tilde{\phi}[\beta X]$ 在 $Y$ 中也是稠密的，再根据 $\tilde{\phi}[\beta X]$ 的紧致性得 $\tilde{\phi}[\beta X]=Y$. 最后，如果对每个 $f \in C_{b}(X)$ 都存在 $g \in C(Y)$ 使得 $f=g\circ \phi$，则 $\Phi$ 是单射，从而 $\tilde{\phi}$ 是双射，根据定理 25.4.9，$\tilde{\phi}$ 是一个同胚。
 

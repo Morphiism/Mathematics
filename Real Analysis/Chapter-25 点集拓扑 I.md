@@ -700,7 +700,7 @@ $$
 
 上述定理中的空间 $X^{*}$ 被称为 $X$ 的**单点紧化**或者 **Alexandroff 紧化**，它在 $\mathbb{R}^{n}$ 上有一个非常直观的对应，以 $\mathbb{R}$ 为例，其单点紧化同胚于 $\mathbb{R}^{2}$ 上的一个圆：
 
-![](images/4.png)
+![](Real%20Analysis/images/4.png)
 
 图中将 $E$ 点映射到 $D$ 点，将 $\infty$ 映射到 $C$ 点的映射就是一个同胚。一般地，$\mathbb{R}^{n}$ 的单点紧化同胚于 $\mathbb{R}^{n+1}$ 中的球面 $S^{n}=\{ x \in \mathbb{R}^{n+1} \mid \lVert x \rVert=1 \}$.
 
