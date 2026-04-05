@@ -781,11 +781,11 @@ $$
 1. 每个 $x \in X$ 都有一个邻域，在其上只有有限个 $h_{\alpha}\neq 0$
 2. 对任意 $x \in E$ 有 $\sum_{\alpha \in A}h_{\alpha}(x)=1$
 
-称一个单位分解 $\{ h_{\alpha} \}$ **从属于** $E$ 的开覆盖 $\mathcal{U}$，如果对任意 $\alpha \in A$，存在 $U \in \mathcal{U}$ 使得 $\mathrm{supp}(h_{\alpha})\subset U$.
+称一个单位分解 $\{ h_{\alpha} \}$ **受** $E$ 的开覆盖 $\mathcal{U}$ **控制**，如果对任意 $\alpha \in A$，存在 $U \in \mathcal{U}$ 使得 $\mathrm{supp}(h_{\alpha})\subset U$.
 
 **定理 25.5.16**
 
-设 $X$ 是 LCH 空间，$K\subset X$ 是紧致集，$\{ U_{j} \}_{j=1}^{n}$ 是 $K$ 的一个开覆盖，则存在 $K$ 的单位分解，其从属于 $\{ U_{j} \}$，并且由紧支撑函数组成。
+设 $X$ 是 LCH 空间，$K\subset X$ 是紧致集，$\{ U_{j} \}_{j=1}^{n}$ 是 $K$ 的一个开覆盖，则存在 $K$ 的单位分解，其受 $\{ U_{j} \}$ 控制，并且由紧支撑函数组成。
 
 **证明**
 

@@ -36,7 +36,7 @@ $$
 
 **定理 10.1.4** 最值定理（extreme value theorem）
 
-设实数 $a<b$，函数 $f\colon [a,b]\to \mathbb{R}$ 是连续函数，那么存在 $x_{\mathrm{max}}\in X$ 使得 $f$ 在 $x_{\mathrm{max}}$ 处达到最大值，并且存在 $x_{\mathrm{min}}\in X$ 使得 $f$ 在 $x_{\mathrm{min}}$ 处达到最小值。
+设实数 $a<b$，函数 $f\colon [a,b]\to \mathbb{R}$ 是连续函数，那么存在 $x_{\mathrm{max}}\in [a,b]$ 使得 $f$ 在 $x_{\mathrm{max}}$ 处达到最大值，并且存在 $x_{\mathrm{min}}\in [a,b]$ 使得 $f$ 在 $x_{\mathrm{min}}$ 处达到最小值。
 
 **证明**
 

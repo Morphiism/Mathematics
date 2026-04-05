@@ -233,13 +233,46 @@ $\mathbb{R}^{n}$ 上的 Borel 测度 $\nu$ 是**正则的**，如果：
 
 **引理 24.1.12**
 
-如果 $\lambda,\mu$ 是 $\mathbb{R}^{n}$ 上互异的 Borel 测度，并且 $\lambda+\mu$ 是正则的，那么 $\lambda$ 和 $\mu$ 也是正则的。
+如果 $\lambda,\mu$ 是 $\mathbb{R}^{n}$ 上的 Borel 测度，并且 $\lambda+\mu$ 是正则的，那么 $\lambda$ 和 $\mu$ 也是正则的。
 
 **证明**
 
-设 $K\subset \mathbb{R}^{n}$ 是紧致的，则 $(\lambda+\mu)(K)<+\infty$，由于 $\lambda\leq \lambda+\mu$，$\mu\leq\lambda+\mu$，故 $\lambda(K)<+\infty,\mu(K)<+\infty$. 现设 $E\subset \mathbb{R}^{n}$ 是 Borel 集，则对任意 $\varepsilon>0$ 都有开集 $U\supset E$ 使得 $(\lambda+\mu)(U)<(\lambda+\mu)(E)+\varepsilon$. 
+我们证明 $\lambda$ 是正则的，$\mu$ 的证明同理。
 
-设 $\mathbb{R}^{n}=P\cup Q,P\cap Q=\varnothing$，并且 $\lambda(Q)=0,\mu(P)=0$，取 $E\subset P$ 是 Borel 集，则有开集 $U\supset E$ 使得 $\lambda(U)\leq(\lambda+\mu)(U)<\lambda(E)+\varepsilon$，从而 $\lambda$ 是正则的，同理 $\mu$ 也是正则的，即证。
+设 $K\subset \mathbb{R}^{n}$ 是紧致集，由 $\lambda+\mu$ 的正则性得 $\lambda(K)\leq(\lambda+\mu)(K)<+\infty$.
+
+下设 $E$ 是 Borel 集。任取开集 $U\supset E$，我们有 $\lambda(E)\leq\lambda(U)$，下面我们考虑两种情况：$(\lambda+\mu)(E)<+\infty$ 以及 $(\lambda+\mu)(E)=+\infty$.
+
+(1). 根据 $\lambda+\mu$ 的正则性，对任意 $\varepsilon>0$，存在开集 $U\supset E$ 使得 $(\lambda+\mu)(U)<(\lambda+\mu)(E)+\varepsilon$. 从而有
+
+$$
+\begin{align}
+\lambda(U)=\lambda(E)+\lambda(U\setminus E)\leq \lambda(E)+(\lambda+\mu)(U\setminus E)<\lambda(E)+\varepsilon
+\end{align}
+$$
+
+即证 $\lambda(E)=\inf\{ \lambda(U) \mid U\supset E,U\text{开} \}$.
+
+(2). 如果 $\lambda(E)=+\infty$，则 $\lambda(U)=+\infty$，等式自然成立。如果 $\lambda(E)<+\infty$，我们取一列递增至 $\mathbb{R}^{n}$ 的紧致集 $\{ K_{n}=\overline{B(0,n)} \}$，然后对每个 $E_{n}=E\cap K_{n}$ 应用情形 (1) 的结论，得到
+
+$$
+\begin{gather}
+\lambda(U_{n})<\lambda(E_{n})+ \dfrac{\varepsilon}{2^{n}}
+\end{gather}
+$$
+
+其中 $U_{n}\supset E_{n}$ 为开集。取 $U=\bigcup_{n=1}^{\infty}U_{n}$，则我们有
+
+$$
+\begin{align}
+\lambda(U) &= \lambda(E)+\lambda(U\setminus E) \\
+&\leq \lambda(E)+\sum_{n=1}^{\infty} \lambda(U_{n}\setminus E) \\
+&\leq \lambda(E)+\sum_{n=1}^{\infty} \lambda(U_{n}\setminus E_{n}) \\
+&< \lambda(E)+\varepsilon
+\end{align}
+$$
+
+这就完成了证明。
 
 **引理 24.1.13**
 
