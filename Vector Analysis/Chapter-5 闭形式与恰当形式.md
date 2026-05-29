@@ -393,7 +393,7 @@ $$
 
 **定理 5.1.8**
 
-设 $A$ 是 $\mathbb{R}^{3}$ 上的星状凸开集，$F,G$ 是 $A$ 上的 $C^{\infty}$ 向量场，则有：
+设 $A$ 是 $\mathbb{R}^{3}$ 上的星状凸开集，$F,G$ 是 $A$ 上的 $C^{1}$ 向量场，则有：
 
 1. 如果 $\mathrm{curl}\ F=0$，则存在标量场 $f$ 使得 $F=\mathrm{grad}\ f$
 2. 如果 $\mathrm{div}\ G=0$，则存在向量场 $H$ 使得 $G=\mathrm{curl}\ H$
