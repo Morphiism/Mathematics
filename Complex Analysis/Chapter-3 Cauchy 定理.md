@@ -525,7 +525,7 @@ $$
 
 Cauchy 定理的另一个推论如下，它表明：对于端点固定的两条可求长曲线，如果一个可以通过连续形变变成另一个，那么解析函数的积分与路径无关。这里的“连续形变”是可求长曲线之间的同伦，定义如下：
 
-**定义 3.3.8** 固定端点同伦（fixed-end-point(FEP) homotopic）
+**定义 3.3.8** 固定端点同伦（fixed-end-point/FEP homotopic）
 
 如果 $\gamma_{0},\gamma_{1}\colon[0,1]\to G$ 是 $G$ 上的可求长曲线使得 $\gamma_{0}(0)=\gamma_{1}(0)=a$，$\gamma_{0}(1)=\gamma_{1}(1)=b$，则 $\gamma_{0},\gamma_{1}$ 是**固定端点同伦的**，如果存在连续函数 $\Gamma\colon I^{2}\to G$ 满足
 

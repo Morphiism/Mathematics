@@ -400,6 +400,22 @@ $$
 
 定义 $f\colon X\to \mathbb{R}$ 为 $f(x)=d(x,B)$，由于 $B=\overline{B}$，故 $f(a)>0$ 对任意 $a \in A$ 成立。又由于 $A$ 是紧致的，存在 $a \in A$ 使得 $f|_{A}$ 取到最小值 $d(A,B)=f(a)>0$，即证。
 
+**定理 1.2.17** Lebesgue 覆盖引理（Lebesgue Covering Lemma）
+
+设 $X$ 是紧致度量空间，$\mathcal{G}$ 是 $X$ 的一个开覆盖，则存在 $\varepsilon>0$ 使得如果 $x \in X$，那么有 $G \in \mathcal{G}$ 满足 $B(x,\varepsilon)\subset G$.
+
+**证明**
+
+我们用反证法。假设不存在这样的 $\varepsilon$，则对任意 $n$，存在 $x_{n}\in X$ 使得 $B(x_{n},1 /n)$ 不包含于任何 $G \in \mathcal{G}$. 由于 $X$ 紧致，故存在 $x_{0} \in X$ 和子序列 $(x_{n_{k}})$ 收敛于它。令 $G_{0}\in \mathcal{G}$ 使得 $x_{0}\in G_{0}$ 并取 $\varepsilon>0$ 使得 $B(x_{0},\varepsilon)\subset G_{0}$. 根据收敛性，存在 $N$ 使得当 $n_{k}\geq N$ 时有 $d(x_{0},x_{n_{k}})<\varepsilon /2$，于是，对任意 $n_{k}\geq \max \{ N,2 /\varepsilon \}$ 和 $y \in B(x_{n_{k}},1 /n_{k})$，有
+
+$$
+\begin{gather}
+d(x_{0},y)\leq d(x_{0},x_{n_{k}})+d(x_{n_{k}},y)< \varepsilon
+\end{gather}
+$$
+
+因此 $B(x_{n_{k}},1 /n_{k})\subset B(x_{0},\varepsilon)\subset G_{0}$，这与假设矛盾。
+
 # Section 3: 解析函数
 
 现在我们来定义复函数可导的条件，并指出它与实可导函数根本性的不同之处。

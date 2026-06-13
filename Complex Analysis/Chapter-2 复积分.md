@@ -348,7 +348,7 @@ $$
 
 **定义 2.1.11** 曲线（curve）
 
-设 $\sigma\colon[c,d]\to \mathbb{C}$ 和 $\gamma\colon[a,b]\to \mathbb{C}$ 是可求长路径，定义 $\sigma$ **等价于** $\gamma$，如果存在连续且严格单调递增的函数 $\varphi\colon[c,d]\to[a,b]$ 满足 $\varphi(c)=a,\varphi(d)=b$，使得 $\sigma=\gamma \circ\varphi$. 我们称 $\varphi$ 是一个**参数变换**。
+设 $\sigma\colon[c,d]\to \mathbb{C}$ 和 $\gamma\colon[a,b]\to \mathbb{C}$ 是可求长路径，定义 $\sigma$ **等价于** $\gamma$，如果存在连续且严格单调递增的函数 $\varphi\colon[c,d]\to[a,b]$ 满足 $\varphi(c)=a,\varphi(d)=b$，使得 $\sigma=\gamma \circ\varphi$. 我们称 $\varphi$ 是一个**重参数化**。
 
 一条**曲线**是路径的一个等价类。曲线的轨迹定义为等价类中任意路径的轨迹，并且连续函数 $f$ 沿着曲线的积分定义为 $f$ 沿着等价类中任意路径的积分。一条曲线是（分段）光滑的当且仅当等价类中存在（分段）光滑的路径。
 
@@ -611,7 +611,7 @@ $$
 
 > 在定义路径积分 $\int_{\gamma}f(z)\mathrm{d}z$ 时，我们使用的底层结构是 Riemann-Stieltjes 积分。不过，事实上我们完全可以以 Lebesgue 积分为基础来定义路径积分：给定可求长曲线 $\gamma$，其诱导了 $[a,b]$ 上的复测度 $\mu_{\gamma}$，从而对于连续函数 $f$，Lebesgue-Stieltjes 积分 $\int_{[a,b]} (f\circ\gamma)\mathrm{d}\mu_{\gamma}$ 良定，并且等于 Riemann-Stieltjes 积分 $\int_{a}^{b}f(\gamma(t))\mathrm{d}\gamma(t)$.
 > 
-> 然而，使用 Riemann-Stieltjes 积分作为路径积分的定义有其内在的合理性：在复分析中，我们所研究的函数 $f$ 通常至少是连续的，这便使得测度论工具的引入成为一种不必要的抽象化。其次，在 Riemann-Stieltjes 积分观点下，路径积分在重参数化下保持不变（定理 2.1.10）这一结论是内禀的，反而在 Lebesgue-Stieltjes 积分观点下需要额外处理测度的变化，丢失了其几何直观性。
+> 然而，使用 Riemann-Stieltjes 积分作为路径积分的定义有其内在的合理性：在复分析中，我们所研究的函数 $f$ 通常至少是连续的，这便使得测度论工具的引入成为一种不必要的抽象化。其次，在 Riemann-Stieltjes 积分观点下，路径积分在重参数化下保持不变（定理 2.1.10）这一结论是内蕴的，反而在 Lebesgue-Stieltjes 积分观点下需要额外处理测度的变化，丢失了其几何直观性。
 
 # Section 2: 解析函数的幂级数展开
 
