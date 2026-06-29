@@ -450,15 +450,15 @@ X_{n}=\overline{\{ f(z_{n}) \mid f \in \mathcal{F} \}} \subset\Omega
 \end{gather}
 $$
 
-则 $X_{n}$ 紧致，从而 $X=\prod_{n=1}^{\infty}X_{n}$ 是一个紧致度量空间。对 $f \in \mathcal{F}$，定义 $\widetilde{f} \in X$ 为
+则 $X_{n}$ 紧致，从而 $X=\prod_{n=1}^{\infty}X_{n}$ 是一个紧致度量空间。对 $f \in \mathcal{F}$，定义 $\tilde{f} \in X$ 为
 
 $$
 \begin{gather}
-\widetilde{f} = (f(z_{1}),f(z_{2}),\dots)
+\tilde{f} = (f(z_{1}),f(z_{2}),\dots)
 \end{gather}
 $$
 
-设 $(f_{k})$ 是 $\mathcal{F}$ 中的序列，则 $(\widetilde{f}_{k})$ 是 $X$ 中的序列，从而有 $\xi=(\xi_{n}) \in X$ 和子序列（仍然记作 $\widetilde{f}_{k}$）收敛于 $\xi$. 于是我们有
+设 $(f_{k})$ 是 $\mathcal{F}$ 中的序列，则 $(\tilde{f}_{k})$ 是 $X$ 中的序列，从而有 $\xi=(\xi_{n}) \in X$ 和子序列（仍然记作 $\tilde{f}_{k}$）收敛于 $\xi$. 于是我们有
 
 $$
 \begin{gather}
